@@ -5,6 +5,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 The team consists of 
 * Lydia Hu 
 * Daneil Nguyen
+* Jason Maa
 
 ## Installations 
 
