@@ -6,6 +6,7 @@ The team consists of
 * Lydia Hu 
 * Daneil Nguyen
 * Jason Maa
+* Maria Mao
 
 ## Installations 
 
