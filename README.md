@@ -1,4 +1,6 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a website for the Women in Science, Engineering, and the Environment initiative, a collaboration between the [Center for Sustainable Communities](http://csc-atl.org/) and the IEEE [Women in Geoscience and Remote Sensing Society](http://www.grss-ieee.org/community/idea/). 
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). It uses [material-ui](https://material-ui.com/). 
 
 ## Installations 
 
