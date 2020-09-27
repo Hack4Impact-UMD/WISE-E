@@ -8,6 +8,7 @@ The team consists of
 * Jason Maa
 * Maria Mao
 * Elizabeth Chen
+* Shivanee Arun 
 
 ## Installations 
 
