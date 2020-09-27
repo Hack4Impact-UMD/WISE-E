@@ -1,38 +1,32 @@
 import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
-import Header from "./Header";
-import Footer from "./Footer";
+import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Home from "./components/Home";
+import About from "./components/About";
+import Team from "./components/Team";
+import Events from "./components/Events";
+import Contact from "./components/Contact";
+import Resources from "./components/Resources";
+import GetInvolved from "./components/GetInvolved";
 
-const sections = [
-  { title: "About", url: "#" },
-  { title: "Our Team", url: "#" },
-  { title: "Events", url: "#" },
-  { title: "Contact Us", url: "#" },
-  { title: "Resources", url: "#" },
-];
-
-function App() {
-  return (
-    <div className="App">
-      <Header title="WISE-E" sections={sections} />
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-            This is your home page. 
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-      <Footer title="Footer" description="Placeholder text" />
-    </div>
-  );
+const App = () => {
+	return (
+		<BrowserRouter>
+			<Header title="WISE-E" />
+			<Switch>
+				<Route exact path="/about" component={About} />
+				<Route exact path="/team" component={Team} />
+				<Route exact path="/events" component={Events} />
+				<Route exact path="/contact" component={Contact} />
+				<Route exact path="/resources" component={Resources} />
+				<Route exact path="/get-involved" component={GetInvolved} />
+				<Route exact path="/" component={Home} />
+				<Redirect to="/" />
+			</Switch>
+			<Footer title="Footer" description="Placeholder text" />
+		</BrowserRouter>
+	);
 }
 
 export default App;
