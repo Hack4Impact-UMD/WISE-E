@@ -1,31 +1,31 @@
 import React from "react";
-import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
-
-const sections = [
-	{ title: "About", url: "#" },
-	{ title: "Our Team", url: "#" },
-	{ title: "Events", url: "#" },
-	{ title: "Contact Us", url: "#" },
-	{ title: "Resources", url: "#" },
-];
+import About from "./components/About";
+import Team from "./components/Team";
+import Events from "./components/Events";
+import Contact from "./components/Contact";
+import Resources from "./components/Resources";
+import GetInvolved from "./components/GetInvolved";
 
 const App = () => {
 	return (
-		<div className="App">
-			<Header title="WISE-E" sections={sections} />
-			<BrowserRouter>
-				<Route exact path="/about" component={Home} />
-				<Route exact path="/team" component={Home} />
-				<Route exact path="/events" component={Home} />
-				<Route exact path="/resources" component={Home} />
-				<Route exact path="/get-involved" component={Home} />
-				<Route path="/" component={Home} />
-			</BrowserRouter>
+		<BrowserRouter>
+			<Header title="WISE-E" />
+			<Switch>
+				<Route exact path="/about" component={About} />
+				<Route exact path="/team" component={Team} />
+				<Route exact path="/events" component={Events} />
+				<Route exact path="/contact" component={Contact} />
+				<Route exact path="/resources" component={Resources} />
+				<Route exact path="/get-involved" component={GetInvolved} />
+				<Route exact path="/" component={Home} />
+				<Redirect to="/" />
+			</Switch>
 			<Footer title="Footer" description="Placeholder text" />
-		</div >
+		</BrowserRouter>
 	);
 }
 

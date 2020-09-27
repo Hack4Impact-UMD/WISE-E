@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container } from '@material-ui/core';
-import style from "./style.module.css";
+import styles from "./styles.module.css";
 
 /**
  * Home page
@@ -8,7 +8,7 @@ import style from "./style.module.css";
 const Home = () => {
     return (
         <>
-            <div className={style['banner-img']}></div>
+            <div className={styles['banner-img']}></div>
             
             <Container>
                 {/*TODO: Add home page*/}
