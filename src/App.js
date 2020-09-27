@@ -1,38 +1,32 @@
 import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
-import Header from "./Header";
-import Footer from "./Footer";
+import { BrowserRouter, Route } from "react-router-dom";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Home from "./components/Home";
 
 const sections = [
-  { title: "About", url: "#" },
-  { title: "Our Team", url: "#" },
-  { title: "Events", url: "#" },
-  { title: "Contact Us", url: "#" },
-  { title: "Resources", url: "#" },
+	{ title: "About", url: "#" },
+	{ title: "Our Team", url: "#" },
+	{ title: "Events", url: "#" },
+	{ title: "Contact Us", url: "#" },
+	{ title: "Resources", url: "#" },
 ];
 
-function App() {
-  return (
-    <div className="App">
-      <Header title="WISE-E" sections={sections} />
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-            This is your home page. 
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-      <Footer title="Footer" description="Placeholder text" />
-    </div>
-  );
+const App = () => {
+	return (
+		<div className="App">
+			<Header title="WISE-E" sections={sections} />
+			<BrowserRouter>
+				<Route exact path="/about" component={Home} />
+				<Route exact path="/team" component={Home} />
+				<Route exact path="/events" component={Home} />
+				<Route exact path="/resources" component={Home} />
+				<Route exact path="/get-involved" component={Home} />
+				<Route path="/" component={Home} />
+			</BrowserRouter>
+			<Footer title="Footer" description="Placeholder text" />
+		</div >
+	);
 }
 
 export default App;

@@ -1,0 +1,8 @@
+.banner-img {
+    width: 100%;
+    height: 25em;
+    background-size: cover;
+    background-image: url("./rocks.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
