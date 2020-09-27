@@ -2,6 +2,9 @@ This project is a website for the Women in Science, Engineering, and the Environ
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). It uses [material-ui](https://material-ui.com/). 
 
+The team consists of 
+* Lydia Hu 
+
 ## Installations 
 
 * `npm install`
