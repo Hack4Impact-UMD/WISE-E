@@ -7,6 +7,7 @@ The team consists of
 * Daneil Nguyen
 * Jason Maa
 * Maria Mao
+* Elizabeth Chen
 
 ## Installations 
 
