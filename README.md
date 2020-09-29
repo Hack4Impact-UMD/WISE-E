@@ -15,6 +15,7 @@ The team consists of
 * `npm install`
 * `npm install @material-ui/core`
 * `npm install @material-ui/icons`
+* `npm i react-router-dom`
 
 ## Available Scripts
 
