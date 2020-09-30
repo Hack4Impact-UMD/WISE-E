@@ -1,0 +1,17 @@
+.card-img-container {
+    width: 20vmax;
+    overflow: hidden;
+    resize: both;
+}
+
+.card-img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.card-content {
+    height: 10vmax;
+    width: 100%;
+    overflow-y: scroll;
+}
