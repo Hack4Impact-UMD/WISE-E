@@ -18,11 +18,7 @@ import KeyboardArrowDownIcon from "@material-ui/icons/KeyboardArrowDown";
 import KeyboardArrowUpIcon from "@material-ui/icons/KeyboardArrowUp";
 
 import PartnersCard from "./Card";
-
-/**
- * TODO:
- * make collapsable its own seperate component
- */
+import "./Resource.css";
 
 const useRowStyles = makeStyles({
   root: {
@@ -51,10 +47,9 @@ Row.propTypes = {
 };
 
 const rows = [
-  createData("Grant 1", 159, 6.0, 24, 4.0, 3.99),
-  createData("Grant 2", 237, 9.0, 37, 4.3, 4.99),
-  createData("Grant 3", 262, 16.0, 24, 6.0, 3.79),
-  
+  createData("Grant 1", 159),
+  createData("Grant 2", 237),
+  createData("Grant 3", 262),
 ];
 
 function Row(props) {
@@ -77,42 +72,16 @@ function Row(props) {
         <TableCell component="th" scope="row">
           {row.name}
         </TableCell>
-        <TableCell align="right">{row.calories}</TableCell>
-        <TableCell align="right">{row.fat}</TableCell>
-        <TableCell align="right">{row.carbs}</TableCell>
-        <TableCell align="right">{row.protein}</TableCell>
+        <TableCell align="right">{row.dueDate}</TableCell>
       </TableRow>
       <TableRow>
         <TableCell style={{ paddingBottom: 0, paddingTop: 0 }} colSpan={6}>
           <Collapse in={open} timeout="auto" unmountOnExit>
             <Box margin={1}>
               <Typography variant="h6" gutterBottom component="div">
-                History
+                Description
               </Typography>
-              <Table size="small" aria-label="purchases">
-                <TableHead>
-                  <TableRow>
-                    <TableCell>Date</TableCell>
-                    <TableCell>Customer</TableCell>
-                    <TableCell align="right">Amount</TableCell>
-                    <TableCell align="right">Total price ($)</TableCell>
-                  </TableRow>
-                </TableHead>
-                <TableBody>
-                  {row.history.map((historyRow) => (
-                    <TableRow key={historyRow.date}>
-                      <TableCell component="th" scope="row">
-                        {historyRow.date}
-                      </TableCell>
-                      <TableCell>{historyRow.customerId}</TableCell>
-                      <TableCell align="right">{historyRow.amount}</TableCell>
-                      <TableCell align="right">
-                        {Math.round(historyRow.amount * row.price * 100) / 100}
-                      </TableCell>
-                    </TableRow>
-                  ))}
-                </TableBody>
-              </Table>
+              <p>Description</p>
             </Box>
           </Collapse>
         </TableCell>
@@ -122,18 +91,10 @@ function Row(props) {
 }
 
 //change this to apply to grant information
-function createData(name, calories, fat, carbs, protein, price) {
+function createData(name, dueDate) {
   return {
     name,
-    calories,
-    fat,
-    carbs,
-    protein,
-    price,
-    history: [
-      { date: "2020-01-05", customerId: "11091700", amount: 3 },
-      { date: "2020-01-02", customerId: "Anonymous", amount: 1 },
-    ],
+    dueDate,
   };
 }
 
@@ -148,19 +109,42 @@ const Resources = (props) => {
       </Container>
       <Container>
         <h2>{msg.Alliances.title}</h2>
-        <PartnersCard/>
-        <PartnersCard/>
+        <div className="resource-cards">
+          <PartnersCard
+            partnerName={msg.sampleAlliance.name}
+            imgSrc={msg.imageExample.src}
+          />
+          <PartnersCard
+            partnerName={msg.sampleAlliance.name}
+            imgSrc={msg.imageExample.src}
+          />
+        </div>
       </Container>
       <Container>
         <h2>{msg.Partners.title}</h2>
-        <PartnersCard/>
-        <PartnersCard/>
-        <PartnersCard/>
+        <div className="resource-cards">
+          <PartnersCard
+            partnerName={msg.samplePartner.name}
+            imgSrc={msg.imageExample.src}
+          />
+          <PartnersCard
+            partnerName={msg.samplePartner.name}
+            imgSrc={msg.imageExample.src}
+          />
+        </div>
       </Container>
       <Container>
         <h2>{msg.Network.title}</h2>
-        <PartnersCard/>
-        <PartnersCard/>
+        <div className="resource-cards">
+          <PartnersCard
+            partnerName={msg.sampleNetwork.name}
+            imgSrc={msg.imageExample.src}
+          />
+          <PartnersCard
+            partnerName={msg.sampleNetwork.name}
+            imgSrc={msg.imageExample.src}
+          />
+        </div>
       </Container>
       <Container>
         <h2>{msg.Grants.title}</h2>
@@ -171,9 +155,6 @@ const Resources = (props) => {
                 <TableCell />
                 <TableCell>Grant Name</TableCell>
                 <TableCell align="right">Due Date</TableCell>
-                <TableCell align="right">Fat&nbsp;(g)</TableCell>
-                <TableCell align="right">Carbs&nbsp;(g)</TableCell>
-                <TableCell align="right">Protein&nbsp;(g)</TableCell>
               </TableRow>
             </TableHead>
             <TableBody>
