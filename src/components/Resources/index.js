@@ -17,7 +17,12 @@ import Paper from "@material-ui/core/Paper";
 import KeyboardArrowDownIcon from "@material-ui/icons/KeyboardArrowDown";
 import KeyboardArrowUpIcon from "@material-ui/icons/KeyboardArrowUp";
 
-//https://material-ui.com/components/tables/
+import PartnersCard from "./Card";
+
+/**
+ * TODO:
+ * make collapsable its own seperate component
+ */
 
 const useRowStyles = makeStyles({
   root: {
@@ -116,6 +121,7 @@ function Row(props) {
   );
 }
 
+//change this to apply to grant information
 function createData(name, calories, fat, carbs, protein, price) {
   return {
     name,
@@ -130,6 +136,7 @@ function createData(name, calories, fat, carbs, protein, price) {
     ],
   };
 }
+
 const Resources = (props) => {
   const { row } = props;
   const [open, setOpen] = React.useState(false);
@@ -141,12 +148,19 @@ const Resources = (props) => {
       </Container>
       <Container>
         <h2>{msg.Alliances.title}</h2>
+        <PartnersCard/>
+        <PartnersCard/>
       </Container>
       <Container>
         <h2>{msg.Partners.title}</h2>
+        <PartnersCard/>
+        <PartnersCard/>
+        <PartnersCard/>
       </Container>
       <Container>
         <h2>{msg.Network.title}</h2>
+        <PartnersCard/>
+        <PartnersCard/>
       </Container>
       <Container>
         <h2>{msg.Grants.title}</h2>
