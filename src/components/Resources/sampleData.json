@@ -21,6 +21,7 @@
     "name": "Sample Network 1"
   },
   "imageExample": {
-    "src": "https://www.brandcrowd.com/gallery/brands/pictures/picture1378148060440.png"
+    "src": "https://www.brandcrowd.com/gallery/brands/pictures/picture1378148060440.png",
+    "alt": "example image"
   }
 }

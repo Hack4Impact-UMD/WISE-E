@@ -93,9 +93,6 @@ function createData(name, dueDate) {
 }
 
 const Resources = (props) => {
-  const { row } = props;
-  const [open, setOpen] = React.useState(false);
-  const classes = useRowStyles();
   return (
     <>
       <Container>
@@ -107,10 +104,12 @@ const Resources = (props) => {
           <CardTemplate
             name={msg.sampleAlliance.name}
             imgSrc={msg.imageExample.src}
+            alt={msg.imageExample.alt}
           />
           <CardTemplate
             name={msg.sampleAlliance.name}
             imgSrc={msg.imageExample.src}
+            alt={msg.imageExample.alt}
           />
         </div>
       </Container>
@@ -120,10 +119,12 @@ const Resources = (props) => {
           <CardTemplate
             name={msg.samplePartner.name}
             imgSrc={msg.imageExample.src}
+            alt={msg.imageExample.alt}
           />
           <CardTemplate
             name={msg.samplePartner.name}
             imgSrc={msg.imageExample.src}
+            alt={msg.imageExample.alt}
           />
         </div>
       </Container>
@@ -133,10 +134,12 @@ const Resources = (props) => {
           <CardTemplate
             name={msg.sampleNetwork.name}
             imgSrc={msg.imageExample.src}
+            alt={msg.imageExample.alt}
           />
           <CardTemplate
             name={msg.sampleNetwork.name}
             imgSrc={msg.imageExample.src}
+            alt={msg.imageExample.alt}
           />
         </div>
       </Container>

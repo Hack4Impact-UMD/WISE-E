@@ -29,7 +29,7 @@ export default function CardTemplate(props) {
           gutterBottom
         >
           <div>
-            <img src={props.imgSrc} />
+            <img src={props.imgSrc} alt={props.alt}/>
           </div>
           {props.name}
         </Typography>
