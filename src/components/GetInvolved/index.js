@@ -36,7 +36,7 @@ const GetInvolved = () => {
                 setHearAboutUs(e.target.value);
                 break;
         }
-    } 
+    }
 
     const inputValues = { firstName, lastName, email, hearAboutUs}
 
@@ -49,6 +49,7 @@ const GetInvolved = () => {
                         handleChange={(input, e) => handleChange(input, e)}
                         nextStep={() => nextStep()}
                         prevStep={() => prevStep()}
+                        inputValues={inputValues}
                     />
                 </Container>
             );
