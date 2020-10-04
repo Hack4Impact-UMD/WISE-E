@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { Container } from "@material-ui/core";
 import msg from "./sampleData.json";
 import PropTypes from "prop-types";
@@ -17,7 +17,7 @@ import Paper from "@material-ui/core/Paper";
 import KeyboardArrowDownIcon from "@material-ui/icons/KeyboardArrowDown";
 import KeyboardArrowUpIcon from "@material-ui/icons/KeyboardArrowUp";
 
-import PartnersCard from "./Card";
+import CardTemplate from "./CardTemplate";
 import "./Resource.css";
 
 /**
@@ -35,31 +35,20 @@ const useRowStyles = makeStyles({
 
 Row.propTypes = {
   row: PropTypes.shape({
-    calories: PropTypes.number.isRequired,
-    carbs: PropTypes.number.isRequired,
-    fat: PropTypes.number.isRequired,
-    history: PropTypes.arrayOf(
-      PropTypes.shape({
-        amount: PropTypes.number.isRequired,
-        customerId: PropTypes.string.isRequired,
-        date: PropTypes.string.isRequired,
-      })
-    ).isRequired,
     name: PropTypes.string.isRequired,
-    price: PropTypes.number.isRequired,
-    protein: PropTypes.number.isRequired,
+    dueDate: PropTypes.string.isRequired,
   }).isRequired,
 };
 
 const rows = [
-  createData("Grant 1", 159),
-  createData("Grant 2", 237),
-  createData("Grant 3", 262),
+  createData("Grant 1", "11/01/2020"),
+  createData("Grant 2", "11/02/2020"),
+  createData("Grant 3", "11/03/2020"),
 ];
 
 function Row(props) {
   const { row } = props;
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
   const classes = useRowStyles();
 
   return (
@@ -86,7 +75,7 @@ function Row(props) {
               <Typography variant="h6" gutterBottom component="div">
                 Description
               </Typography>
-              <p>Description</p>
+              <p>Random description for grant placed here</p>
             </Box>
           </Collapse>
         </TableCell>
@@ -115,12 +104,12 @@ const Resources = (props) => {
       <Container>
         <h2>{msg.Alliances.title}</h2>
         <div className="resource-cards">
-          <PartnersCard
-            partnerName={msg.sampleAlliance.name}
+          <CardTemplate
+            name={msg.sampleAlliance.name}
             imgSrc={msg.imageExample.src}
           />
-          <PartnersCard
-            partnerName={msg.sampleAlliance.name}
+          <CardTemplate
+            name={msg.sampleAlliance.name}
             imgSrc={msg.imageExample.src}
           />
         </div>
@@ -128,12 +117,12 @@ const Resources = (props) => {
       <Container>
         <h2>{msg.Partners.title}</h2>
         <div className="resource-cards">
-          <PartnersCard
-            partnerName={msg.samplePartner.name}
+          <CardTemplate
+            name={msg.samplePartner.name}
             imgSrc={msg.imageExample.src}
           />
-          <PartnersCard
-            partnerName={msg.samplePartner.name}
+          <CardTemplate
+            name={msg.samplePartner.name}
             imgSrc={msg.imageExample.src}
           />
         </div>
@@ -141,19 +130,19 @@ const Resources = (props) => {
       <Container>
         <h2>{msg.Network.title}</h2>
         <div className="resource-cards">
-          <PartnersCard
-            partnerName={msg.sampleNetwork.name}
+          <CardTemplate
+            name={msg.sampleNetwork.name}
             imgSrc={msg.imageExample.src}
           />
-          <PartnersCard
-            partnerName={msg.sampleNetwork.name}
+          <CardTemplate
+            name={msg.sampleNetwork.name}
             imgSrc={msg.imageExample.src}
           />
         </div>
       </Container>
       <Container>
         <h2>{msg.Grants.title}</h2>
-        <TableContainer component={Paper}>
+        <TableContainer component={Paper} className = "resource-table">
           <Table aria-label="collapsible table">
             <TableHead>
               <TableRow>

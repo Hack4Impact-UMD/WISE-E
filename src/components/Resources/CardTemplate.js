@@ -36,7 +36,7 @@ export default function CardTemplate(props) {
           <div>
             <img src={props.imgSrc} />
           </div>
-          {props.partnerName}
+          {props.name}
         </Typography>
       </CardContent>
     </Card>
