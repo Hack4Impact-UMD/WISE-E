@@ -20,6 +20,11 @@ import KeyboardArrowUpIcon from "@material-ui/icons/KeyboardArrowUp";
 import PartnersCard from "./Card";
 import "./Resource.css";
 
+/**
+ * TODO:
+ * Possibly make the table its seperate component
+ * Styling of card and table components
+ */
 const useRowStyles = makeStyles({
   root: {
     "& > *": {
