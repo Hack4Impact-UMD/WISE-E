@@ -1,0 +1,27 @@
+{
+  "Partners": {
+    "title": "Our Partners"
+  },
+  "Network": {
+    "title": "Network With Us"
+  },
+  "Alliances": {
+    "title": "Our Alliances"
+  },
+  "Grants": {
+    "title": "Apply for Grants"
+  },
+  "samplePartner": {
+    "name": "Partner Example 1"
+  },
+  "sampleAlliance": {
+    "name": "Alliance Example 1"
+  },
+  "sampleNetwork": {
+    "name": "Sample Network 1"
+  },
+  "imageExample": {
+    "src": "https://www.brandcrowd.com/gallery/brands/pictures/picture1378148060440.png",
+    "alt": "example image"
+  }
+}
