@@ -21,7 +21,7 @@ const useStyles = makeStyles({
  * 
  * @param {*} param0 
  */
-const EventCard = ({ event }) => {
+export default function EventCard({ title, imageURI, date, location, link, content }) {
 
   const classes = useStyles();
 
@@ -31,19 +31,21 @@ const EventCard = ({ event }) => {
         <Grid container direction="row">
 
           <Grid container item md={3}>
-            <img className={classes.cardImg} src={event.imageURI ? event.imageURI : noImage} alt={event.title}/>
+            <img
+              className={classes.cardImg}
+              src={imageURI ? imageURI : noImage}
+              alt={title}
+            />
           </Grid>
 
           <Grid container item md={9}>
             <CardContent className={classes.cardContent}>
               <Box>
                 <h2>
-                  <Link href={event.link}>{event.title}</Link>
+                  <Link href={link}>{title}</Link>
                 </h2>
-                <span>
-                  <em>{event.date.toDateString()}{event.location ? ` - ${event.location}` : ''}</em>
-                </span>
-                <p>{event.content}</p>
+                <em>{date.toDateString()}{location ? ` - ${location}` : ''}</em>
+                <p>{content}</p>
               </Box>
             </CardContent>
           </Grid>
@@ -53,4 +55,3 @@ const EventCard = ({ event }) => {
     </Box>
   );
 }
-export default EventCard;

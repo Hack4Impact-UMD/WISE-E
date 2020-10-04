@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Container, TablePagination, Select, Box, Grid } from '@material-ui/core';
 import EventCard from './EventCard';
-
 import { dummyEvents } from './dummyData';
 
 const rowsPerPage = 2;
@@ -9,7 +8,7 @@ const rowsPerPage = 2;
 /**
  * Events page
  */
-const Events = () => {
+export default function Events() {
 
   const [events, setEvents] = useState([]);
   const [page, setPage] = useState(0);
@@ -84,11 +83,9 @@ const Events = () => {
 
       {
         events.slice(page * rowsPerPage, (page + 1) * rowsPerPage)
-          .map(event => <EventCard event={event} key={event.id} />)
+          .map(event => <EventCard {...event} key={event.id} />)
       }
 
     </Container >
   );
 }
-
-export default Events;
