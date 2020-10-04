@@ -7,8 +7,7 @@ import "./Card.css";
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: 275,
-    display: "flex",
+    minWidth: 100,
   },
   bullet: {
     display: "inline-block",
