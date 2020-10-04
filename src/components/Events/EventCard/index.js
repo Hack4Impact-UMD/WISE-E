@@ -31,7 +31,7 @@ const EventCard = ({ event }) => {
         <Grid container direction="row">
 
           <Grid container item md={3}>
-            <img className={classes.cardImg} src={event.imageURI ? event.imageURI : noImage} />
+            <img className={classes.cardImg} src={event.imageURI ? event.imageURI : noImage} alt={event.title}/>
           </Grid>
 
           <Grid container item md={9}>
