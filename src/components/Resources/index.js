@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { Container } from "@material-ui/core";
 import msg from "./sampleData.json";
 import PropTypes from "prop-types";
@@ -18,13 +18,6 @@ import KeyboardArrowDownIcon from "@material-ui/icons/KeyboardArrowDown";
 import KeyboardArrowUpIcon from "@material-ui/icons/KeyboardArrowUp";
 
 import CardTemplate from "./CardTemplate";
-import "./Resource.css";
-
-/**
- * TODO:
- * Possibly make the table its seperate component
- * Styling of card and table components
- */
 const useRowStyles = makeStyles({
   root: {
     "& > *": {
@@ -32,6 +25,12 @@ const useRowStyles = makeStyles({
     },
   },
 });
+
+const useCardStyles = makeStyles({
+  resourceCards: {
+    display: "flex",
+  },
+})
 
 Row.propTypes = {
   row: PropTypes.shape({
@@ -93,6 +92,8 @@ function createData(name, dueDate) {
 }
 
 const Resources = (props) => {
+  const classes = useCardStyles();
+
   return (
     <>
       <Container>
@@ -100,7 +101,7 @@ const Resources = (props) => {
       </Container>
       <Container>
         <h2>{msg.Alliances.title}</h2>
-        <div className="resource-cards">
+        <div className={classes.resourceCards}>
           <CardTemplate
             name={msg.sampleAlliance.name}
             imgSrc={msg.imageExample.src}
@@ -115,7 +116,7 @@ const Resources = (props) => {
       </Container>
       <Container>
         <h2>{msg.Partners.title}</h2>
-        <div className="resource-cards">
+        <div className={classes.resourceCards}>
           <CardTemplate
             name={msg.samplePartner.name}
             imgSrc={msg.imageExample.src}
@@ -130,7 +131,7 @@ const Resources = (props) => {
       </Container>
       <Container>
         <h2>{msg.Network.title}</h2>
-        <div className="resource-cards">
+        <div className={classes.resourceCards}>
           <CardTemplate
             name={msg.sampleNetwork.name}
             imgSrc={msg.imageExample.src}
@@ -145,7 +146,7 @@ const Resources = (props) => {
       </Container>
       <Container>
         <h2>{msg.Grants.title}</h2>
-        <TableContainer component={Paper} className = "resource-table">
+        <TableContainer component={Paper} className="resource-table">
           <Table aria-label="collapsible table">
             <TableHead>
               <TableRow>
