@@ -7,14 +7,17 @@ import Typography from "@material-ui/core/Typography";
 const useStyles = makeStyles({
   root: {
     minWidth: 100,
-    marginRight: 20
+    marginRight: 20,
   },
   title: {
     fontSize: 14,
-    textAlign: "center"
+    textAlign: "center",
   },
   pos: {
     marginBottom: 12,
+  },
+  link: {
+    textDecoration: "none",
   },
 });
 
@@ -30,9 +33,11 @@ export default function CardTemplate(props) {
           gutterBottom
         >
           <div>
-            <img src={props.imgSrc} alt={props.alt}/>
+            <img src={props.imgSrc} alt={props.alt} />
           </div>
-          {props.name}
+          <a href={props.link} className={classes.link}>
+            {props.name}
+          </a>
         </Typography>
       </CardContent>
     </Card>
