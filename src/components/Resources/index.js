@@ -30,7 +30,7 @@ const useCardStyles = makeStyles({
   resourceCards: {
     display: "flex",
   },
-})
+});
 
 Row.propTypes = {
   row: PropTypes.shape({
@@ -106,11 +106,13 @@ const Resources = (props) => {
             name={msg.sampleAlliance.name}
             imgSrc={msg.imageExample.src}
             alt={msg.imageExample.alt}
+            link={msg.sampleAlliance.link}
           />
           <CardTemplate
             name={msg.sampleAlliance.name}
             imgSrc={msg.imageExample.src}
             alt={msg.imageExample.alt}
+            link={msg.sampleAlliance.link}
           />
         </div>
       </Container>
@@ -121,11 +123,13 @@ const Resources = (props) => {
             name={msg.samplePartner.name}
             imgSrc={msg.imageExample.src}
             alt={msg.imageExample.alt}
+            link={msg.samplePartner.link}
           />
           <CardTemplate
             name={msg.samplePartner.name}
             imgSrc={msg.imageExample.src}
             alt={msg.imageExample.alt}
+            link={msg.samplePartner.link}
           />
         </div>
       </Container>
@@ -136,11 +140,13 @@ const Resources = (props) => {
             name={msg.sampleNetwork.name}
             imgSrc={msg.imageExample.src}
             alt={msg.imageExample.alt}
+            link={msg.sampleNetwork.link}
           />
           <CardTemplate
             name={msg.sampleNetwork.name}
             imgSrc={msg.imageExample.src}
             alt={msg.imageExample.alt}
+            link={msg.sampleNetwork.link}
           />
         </div>
       </Container>
