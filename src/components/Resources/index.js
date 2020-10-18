@@ -100,19 +100,19 @@ const Resources = (props) => {
         <h1>Resources</h1>
       </Container>
       <Container>
-        <h2>{msg.Alliances.title}</h2>
+        <h2>{msg.Network.title}</h2>
         <div className={classes.resourceCards}>
           <CardTemplate
-            name={msg.sampleAlliance.name}
+            name={msg.sampleNetwork.name}
             imgSrc={msg.imageExample.src}
             alt={msg.imageExample.alt}
-            link={msg.sampleAlliance.link}
+            link={msg.sampleNetwork.link}
           />
           <CardTemplate
-            name={msg.sampleAlliance.name}
+            name={msg.sampleNetwork.name}
             imgSrc={msg.imageExample.src}
             alt={msg.imageExample.alt}
-            link={msg.sampleAlliance.link}
+            link={msg.sampleNetwork.link}
           />
         </div>
       </Container>
@@ -134,19 +134,19 @@ const Resources = (props) => {
         </div>
       </Container>
       <Container>
-        <h2>{msg.Network.title}</h2>
+        <h2>{msg.Alliances.title}</h2>
         <div className={classes.resourceCards}>
           <CardTemplate
-            name={msg.sampleNetwork.name}
+            name={msg.sampleAlliance.name}
             imgSrc={msg.imageExample.src}
             alt={msg.imageExample.alt}
-            link={msg.sampleNetwork.link}
+            link={msg.sampleAlliance.link}
           />
           <CardTemplate
-            name={msg.sampleNetwork.name}
+            name={msg.sampleAlliance.name}
             imgSrc={msg.imageExample.src}
             alt={msg.imageExample.alt}
-            link={msg.sampleNetwork.link}
+            link={msg.sampleAlliance.link}
           />
         </div>
       </Container>
