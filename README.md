@@ -9,6 +9,7 @@ The team consists of
 * Maria Mao
 * Elizabeth Chen
 * Shivanee Arun 
+* Natnael Mekonnen
 
 ## Installations 
 
