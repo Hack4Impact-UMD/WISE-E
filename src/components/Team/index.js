@@ -41,52 +41,48 @@ const Team = () => {
     })
   }, [])
 
-  // HELP MAKE USE-EFFECT Render first
-  if (teamMembers.length === 0) {
-    return (<></>)
-  } else {
-    const members = teamMembers.map((member, i) => 
-    <CardTemplate
-      id={i}
-      key={i}
-      name={member.fields.name}
-      imageURL={member.fields.profilePicture.fields.file.url}
-      description={member.fields.description.content[0].content[0].value}
-      position={member.fields.position}
-      alt={member.fields.name}
-      email={member.fields.email}
-    />)
+  const members = teamMembers.map((member, i) => 
+  <CardTemplate
+    id={i}
+    key={i}
+    name={member.fields.name}
+    imageURL={member.fields.profilePicture.fields.file.url}
+    description={member.fields.description.content[0].content[0].value}
+    position={member.fields.position}
+    alt={member.fields.name}
+    email={member.fields.email}
+  />)
 
-    return (
+  return (
+    <Container>
+      <h1 className={classes.title}>Meet Our Team</h1>
+      <br />
+      {/* <CardTemplate
+        name={msg.Person1.name}
+        imageURL={msg.Person1.imageURL}
+        description={msg.Person1.description}
+        position={msg.Person1.position}
+        alt={msg.Person1.alt}
+        email={msg.Person1.email}
+      /> */}
+      {members}
+
+      <h2>Others Involved</h2>
       <Container>
-        <h1 className={classes.title}>Meet Our Team</h1>
-        <br />
-        {/* <CardTemplate
-          name={msg.Person1.name}
-          imageURL={msg.Person1.imageURL}
-          description={msg.Person1.description}
-          position={msg.Person1.position}
-          alt={msg.Person1.alt}
-          email={msg.Person1.email}
-        /> */}
-        {members}
-
-        <h2>Others Involved</h2>
-        <Container>
-          <Grid container spacing={3}>
-            {dummyAffiliated.map((item) => {
-              return (
-                <Grid item md={4}>
-                    {/**might make this a card to add hover effect */}
-                  <div>{item.name}</div>
-                </Grid>
-              );
-            })}
-          </Grid>
-        </Container>
+        <Grid container spacing={3}>
+          {dummyAffiliated.map((item) => {
+            return (
+              <Grid item md={4}>
+                  {/**might make this a card to add hover effect */}
+                <div>{item.name}</div>
+              </Grid>
+            );
+          })}
+        </Grid>
       </Container>
-    );
-  }
+    </Container>
+  );
+  
 };
 
 export default Team;
