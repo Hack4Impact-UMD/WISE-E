@@ -36,10 +36,9 @@ const Team = () => {
         email={msg.Person1.email}
       />
 
-      {/**Still need to figure out how to make these name apepar in a grid */}
       <h2>Others Involved</h2>
       <Container>
-        <Grid contanier spacing={3}>
+        <Grid container spacing={3}>
           {dummyAffiliated.map((item) => {
             return (
               <Grid item md={4}>
