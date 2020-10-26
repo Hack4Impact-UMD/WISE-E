@@ -29,7 +29,7 @@ export const dummyEvents = [
     will be organized as a ZOOM conference. Email info@gipl.org to receive the ZOOM link to join the meeting.`,
   },
   {
-    id: '5bfaaa5b-9f98-412e-aca2-b2c3119f613f',
+    id: '5bfaaa5b-9f98-412e-aca2-b2c3119f614f',
     title: 'Sierra Club Centennial Group November Virtual Meeting',
     startTime: '2020-11-05T19:00-04:00',
     endTime: '2020-11-05T20:30-04:00',
@@ -43,5 +43,13 @@ export const dummyEvents = [
     supplies from pollution for generations to come.
     RSVP [here](https://act.sierraclub.org/events/details?formcampaignid=7013q000001bDsXAAU&mapLinkHref=) to get
     the online meeting information.`,
+  },
+  {
+    id: '5bfaaa5b-9f98-412e-aca2-b2c3119f613f',
+    title: 'Multiple-Day Event',
+    startTime: '2021-11-05T19:00-04:00',
+    endTime: '2021-12-06T00:30-04:00',
+    link: 'https://google.com',
+    content: `This is a multiple day event.`,
   },
 ];

@@ -28,8 +28,9 @@ export default function Events() {
     switch (option) {
       case 'latest':
         // Sort by most recent event
+        // TODO: sort on start time using ISO string for now
         setEvents(prev => {
-          prev.sort((e1, e2) => e1.date < e2.date);
+          prev.sort((e1, e2) => e1.startTime > e2.startTime);
           return prev;
         });
         setSortingOption('latest');
