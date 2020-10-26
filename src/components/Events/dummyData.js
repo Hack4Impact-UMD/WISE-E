@@ -46,7 +46,7 @@ export const dummyEvents = [
   },
   {
     id: '5bfaaa5b-9f98-412e-aca2-b2c3119f613f',
-    title: 'Multiple-Day Event',
+    title: 'A Multiple-Day Event',
     startTime: '2021-11-05T19:00-04:00',
     endTime: '2021-12-06T00:30-04:00',
     link: 'https://google.com',

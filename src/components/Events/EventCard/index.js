@@ -34,7 +34,7 @@ function dateRangeToString(startDate, endDate) {
     const dateStr = startDate.toLocaleDateString(locale, dateOptions);
     const startTimeStr = startDate.toLocaleTimeString(locale, timeOptions);
     const endTimeStr = endDate.toLocaleTimeString(locale, timeOptions);
-    return `${dateStr} ${startTimeStr}-${endTimeStr}`;
+    return `${dateStr}, ${startTimeStr}-${endTimeStr}`;
   } else {
     const startDateStr = startDate.toLocaleString(locale, {...dateOptions, ...timeOptions});
     const endDateStr = endDate.toLocaleString(locale, {...dateOptions, ...timeOptions});
