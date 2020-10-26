@@ -21,9 +21,12 @@ const useStyles = makeStyles({
  * 
  * @param {*} param0 
  */
-export default function EventCard({ title, imageURI, date, location, link, content }) {
+export default function EventCard({ title, imageURI, startTime, endTime, location, link, content }) {
 
   const classes = useStyles();
+
+  const startDate = new Date(startTime);
+  const endDate = new Date(endTime);
 
   return (
     <Box m={4}>
@@ -44,7 +47,8 @@ export default function EventCard({ title, imageURI, date, location, link, conte
                 <h2>
                   <Link href={link}>{title}</Link>
                 </h2>
-                <em>{date.toDateString()}{location ? ` - ${location}` : ''}</em>
+                <em>{startDate.toDateString()} - {endDate.toDateString()}{location ? ` - ${location}` : ''}</em>
+                {/* TODO: Assuming paragraph content for now. Will be replaced with Contentful rich text renderer. */}
                 <p>{content}</p>
               </Box>
             </CardContent>
