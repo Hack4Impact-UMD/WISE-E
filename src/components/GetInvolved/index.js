@@ -9,6 +9,7 @@ const GetInvolved = () => {
     const [lastName, setLastName] = useState("")
     const [email, setEmail] = useState("")
     const [hearAboutUs, setHearAboutUs] = useState("")
+    const [getInvolvedOption, setGetInvolvedOption] = useState("")
 
     const [step, setStep] = useState(1)
 
@@ -35,10 +36,12 @@ const GetInvolved = () => {
             case "hearAboutUs": 
                 setHearAboutUs(e.target.value);
                 break;
+            case "getInvolvedOption":
+                setGetInvolvedOption(e.target.value);
         }
     }
 
-    const inputValues = { firstName, lastName, email, hearAboutUs}
+    const inputValues = { firstName, lastName, email, hearAboutUs, getInvolvedOption }
 
     switch (step) {
         case 1: 
