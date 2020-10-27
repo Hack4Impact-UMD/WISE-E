@@ -1,5 +1,5 @@
 import React from 'react'
-import { TextField, Button } from '@material-ui/core';
+import { TextField, Button, Select, InputLabel, FormControl } from '@material-ui/core';
 
 const UserForm = (props) => {
 
@@ -55,8 +55,29 @@ const UserForm = (props) => {
           margin="normal"
           fullWidth
         />
+        <FormControl 
+          required 
+          fullWidth 
+          margin="normal"
+          >
+          <InputLabel htmlFor="select-native-required">How Would You Like To Get Involved</InputLabel>
+          <Select 
+            native
+            id="get-involved-option-field"
+            value={props.inputValues.getInvolvedOption}
+            onChange={(e) => props.handleChange("getInvolvedOption", e)}
+            fullWidth
+          >
+            <option aria-label="None" value="" disabled></option>
+            <option value={"Become a member and be a part of our network"}>Become a member and be a part of our network</option>
+            <option value={"Become a volunteer for a specific event"}>Become a volunteer for a specific event</option>
+            <option value={"Learn more about WISE-E mission"}>Learn more about WISE-E mission</option>
+            <option value={"Other"}>Other</option>
+          </Select>
+        </FormControl>
 
         <Button
+          style={{ marginTop: "20px" }}
           color="primary"
           variant="contained"
           type="submit"
