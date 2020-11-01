@@ -3,6 +3,8 @@ import { Container, makeStyles } from "@material-ui/core";
 import msg from "./sampleData.json";
 import CardTemplate from "./CardTemplate";
 import Grid from "@material-ui/core/Grid";
+import Card from "@material-ui/core/Card";
+import CardContent from "@material-ui/core/CardContent";
 
 const useStyles = makeStyles({
   title: {
@@ -11,14 +13,30 @@ const useStyles = makeStyles({
   list: {
     listStyleType: "none",
   },
+  cardContent: {
+    margin: "15px",
+  },
 });
 
 const dummyAffiliated = [
-  { name: "Spencer" },
-  { name: "Katherine" },
-  { name: "Daisy" },
-  { name: "Paul" },
-  { name: "Abby" },
+  {
+    name: "Dr. Camellia Okpodu",
+    position: "Dean of the School of Arts and Science at Xavier University",
+  },
+  { name: "Belinda Hankins", position: "Retired, Senior Executive at AT&T" },
+  {
+    name: "Ahmed Kanisha",
+    position: "Earth Science Student at Georgia Institute of Technology",
+  },
+  {
+    name: "Ashanti Kincannon",
+    position:
+      "Earth and Environmental Science Student at Virginia Wesleyan University",
+  },
+  {
+    name: "Juliet Hall",
+    position: " Advisor & Leadership Consultant at Juliet Hall, Inc. ",
+  },
 ];
 
 const Team = () => {
@@ -36,14 +54,19 @@ const Team = () => {
         email={msg.Person1.email}
       />
 
-      <h2>Others Involved</h2>
+      <center><h2>Others Involved</h2></center>
       <Container>
         <Grid container spacing={3}>
           {dummyAffiliated.map((item) => {
             return (
               <Grid item md={4}>
-                  {/**might make this a card to add hover effect */}
-                <div>{item.name}</div>
+                {/**might make this a card to add hover effect */}
+                <Card class>
+                  <CardContent className={classes.cardContent}>
+                    <h2>{item.name}</h2>
+                    <p>{item.position}</p>
+                  </CardContent>
+                </Card>
               </Grid>
             );
           })}
