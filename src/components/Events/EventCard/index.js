@@ -1,55 +1,37 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { Card, CardContent, Box, Grid, Link } from '@material-ui/core';
-import EventIcon from '@material-ui/icons/Event';
-import LocationOnIcon from '@material-ui/icons/LocationOn';
+import { Card, CardContent, Box, Grid, Button } from '@material-ui/core';
+import TimeDisplay from '../TimeDisplay';
+import LocationDisplay from '../LocationDisplay';
 import noImage from './noImage.png';
 
 const useStyles = makeStyles({
   cardImg: {
     width: '100%',
+    height: '15vmax',
     objectFit: 'cover',
-    maxHeight: '20vmax',
   },
   cardContent: {
-    height: '15vmax',
     width: '100%',
-    overflowY: 'auto',
+  },
+  detailContent: {
+    height: '100%',
+  },
+  controlContent: {
+    height: '100%',
   }
 });
-
-/**
- * Formats date range as string
- * 
- * @param {Date} startDate 
- * @param {Date} endDate 
- */
-function dateRangeToString(startDate, endDate) {
-  const locale = 'en-US';
-  const dateOptions = { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' };
-  const timeOptions = { hour: '2-digit', minute: '2-digit' };
-
-  // Check if dates are equal
-  if (startDate.toDateString() === endDate.toDateString()) {
-    const dateStr = startDate.toLocaleDateString(locale, dateOptions);
-    const startTimeStr = startDate.toLocaleTimeString(locale, timeOptions);
-    const endTimeStr = endDate.toLocaleTimeString(locale, timeOptions);
-    return `${dateStr}, ${startTimeStr}-${endTimeStr}`;
-  } else {
-    const startDateStr = startDate.toLocaleString(locale, {...dateOptions, ...timeOptions});
-    const endDateStr = endDate.toLocaleString(locale, {...dateOptions, ...timeOptions});
-    return `${startDateStr} - ${endDateStr}`;
-  }
-}
 
 /**
  * Info card for a single event
  * 
  * @param {*} param0 
  */
-export default function EventCard({ title, imageURI, startTime, endTime, location, link, content }) {
+export default function EventCard({ event, openModal }) {
 
   const classes = useStyles();
+
+  const { title, imageURI, startTime, endTime, location, link } = event;
 
   return (
     <Box m={4}>
@@ -66,31 +48,19 @@ export default function EventCard({ title, imageURI, startTime, endTime, locatio
 
           <Grid container item md={9}>
             <CardContent className={classes.cardContent}>
-              <Box display="flex" flexDirection="column">
+              <Box display="flex" flexDirection="column" className={classes.detailContent}>
 
-                <h2><Link href={link}>{title}</Link></h2>
+                <h2>{title}</h2>
 
-                {startTime && endTime
-                  ? (
-                    <Box display="flex" flexDirection="row" mb={1}>
-                      <Box mr={1}><strong><EventIcon /></strong></Box>
-                      <em>{dateRangeToString(new Date(startTime), new Date(endTime))}</em>
-                    </Box>
-                  )
-                  : <></>
-                }
-                {location
-                  ? (
-                    <Box display="flex" flexDirection="row" mb={1}>
-                      <Box mr={1}><strong><LocationOnIcon /></strong></Box>
-                      <em>{location}</em>
-                    </Box>
-                  )
-                  : <></>}
-
-                {/* TODO: Assuming paragraph content for now. Will be replaced with Contentful rich text renderer. */}
-                <p>{content}</p>
-
+                <LocationDisplay location={location} />
+                <TimeDisplay startTime={startTime} endTime={endTime} />
+                
+                <Box display="flex" flexDirection="row" justifyContent="end" alignItems="end" className={classes.controlContent}>
+                  <Box mr={1}>
+                    <Button variant="contained" onClick={() => openModal(event)}>Details</Button>
+                  </Box>
+                  <Button variant="contained" href={link}>Register</Button>
+                </Box>
               </Box>
             </CardContent>
           </Grid>
