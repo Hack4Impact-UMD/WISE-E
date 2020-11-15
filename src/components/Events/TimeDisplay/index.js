@@ -26,6 +26,11 @@ function dateRangeToString(startDate, endDate) {
   }
 }
 
+/**
+ * Displays event times
+ * 
+ * @param {*} param0 
+ */
 export default function TimeDisplay({ startTime, endTime }) {
 
   if (!startTime || !endTime) {

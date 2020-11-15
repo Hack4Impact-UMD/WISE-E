@@ -2,6 +2,11 @@ import React from 'react';
 import { Box } from '@material-ui/core';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 
+/**
+ * Displays event location
+ * 
+ * @param {*} param0 
+ */
 export default function LocationDisplay({ location }) {
 
   if (!location) {
