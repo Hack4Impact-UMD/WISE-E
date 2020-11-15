@@ -6,7 +6,8 @@ import Typography from "@material-ui/core/Typography";
 
 const useStyles = makeStyles({
   root: {
-    minWidth: 100,
+    maxWidth: 200,
+    maxHeight: 200,
     marginRight: 20,
   },
   title: {
@@ -19,6 +20,9 @@ const useStyles = makeStyles({
   link: {
     textDecoration: "none",
   },
+  imageProps:{
+    maxHeight: 70
+  }
 });
 
 export default function CardTemplate(props) {
@@ -33,7 +37,7 @@ export default function CardTemplate(props) {
           gutterBottom
         >
           <div>
-            <img src={props.imgSrc} alt={props.alt} />
+            <img src={props.imgSrc} alt={props.alt} className={classes.imageProps}/>
           </div>
           <a href={props.link} className={classes.link}>
             {props.name}

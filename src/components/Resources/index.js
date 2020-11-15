@@ -16,8 +16,10 @@ import Typography from "@material-ui/core/Typography";
 import Paper from "@material-ui/core/Paper";
 import KeyboardArrowDownIcon from "@material-ui/icons/KeyboardArrowDown";
 import KeyboardArrowUpIcon from "@material-ui/icons/KeyboardArrowUp";
-
 import CardTemplate from "./CardTemplate";
+
+//will need contentful integration
+
 const useRowStyles = makeStyles({
   root: {
     "& > *": {
@@ -102,52 +104,40 @@ const Resources = (props) => {
       <Container>
         <h2>{msg.Network.title}</h2>
         <div className={classes.resourceCards}>
-          <CardTemplate
-            name={msg.sampleNetwork.name}
-            imgSrc={msg.imageExample.src}
-            alt={msg.imageExample.alt}
-            link={msg.sampleNetwork.link}
-          />
-          <CardTemplate
-            name={msg.sampleNetwork.name}
-            imgSrc={msg.imageExample.src}
-            alt={msg.imageExample.alt}
-            link={msg.sampleNetwork.link}
-          />
+          {msg.sampleNetwork.map((item) => (
+            <CardTemplate
+              name={item.name}
+              link={item.link}
+              imgSrc={item.imgSrc}
+              alt={item.alt}
+            />
+          ))}
         </div>
       </Container>
       <Container>
         <h2>{msg.Partners.title}</h2>
         <div className={classes.resourceCards}>
-          <CardTemplate
-            name={msg.samplePartner.name}
-            imgSrc={msg.imageExample.src}
-            alt={msg.imageExample.alt}
-            link={msg.samplePartner.link}
-          />
-          <CardTemplate
-            name={msg.samplePartner.name}
-            imgSrc={msg.imageExample.src}
-            alt={msg.imageExample.alt}
-            link={msg.samplePartner.link}
-          />
+        {msg.samplePartner.map((item) => (
+            <CardTemplate
+              name={item.name}
+              link={item.link}
+              imgSrc={item.imgSrc}
+              alt={item.alt}
+            />
+          ))}
         </div>
       </Container>
       <Container>
         <h2>{msg.Alliances.title}</h2>
         <div className={classes.resourceCards}>
-          <CardTemplate
-            name={msg.sampleAlliance.name}
-            imgSrc={msg.imageExample.src}
-            alt={msg.imageExample.alt}
-            link={msg.sampleAlliance.link}
-          />
-          <CardTemplate
-            name={msg.sampleAlliance.name}
-            imgSrc={msg.imageExample.src}
-            alt={msg.imageExample.alt}
-            link={msg.sampleAlliance.link}
-          />
+        {msg.sampleAlliance.map((item) => (
+            <CardTemplate
+              name={item.name}
+              link={item.link}
+              imgSrc={item.imgSrc}
+              alt={item.alt}
+            />
+          ))}
         </div>
       </Container>
       <Container>
