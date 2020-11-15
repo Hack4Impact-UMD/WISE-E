@@ -5,6 +5,7 @@ import CardTemplate from "./CardTemplate";
 import Grid from "@material-ui/core/Grid";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
+import Carousel from "react-material-ui-carousel";
 
 const useStyles = makeStyles({
   title: {
@@ -25,7 +26,7 @@ const useStyles = makeStyles({
   },
   Card: {
     height: "150px",
-  }
+  },
 });
 
 const affiliatedNames = [
@@ -75,18 +76,19 @@ const Team = () => {
       </div>
 
       <br />
-
-      {/**To make carousel, would probably need to install another dependency */}
-      {msg.samplePeople.map((person) => (
-        <CardTemplate
-          name={person.name}
-          imageURL={person.imageURL}
-          description={person.description}
-          position={person.position}
-          alt={person.alt}
-          email={person.email}
-        />
-      ))}
+      {/**still not sure what type of animation for carousel */}
+      <Carousel interval={4000} timeout={500} animation={"fade"}>
+        {msg.samplePeople.map((person) => (
+          <CardTemplate
+            name={person.name}
+            imageURL={person.imageURL}
+            description={person.description}
+            position={person.position}
+            alt={person.alt}
+            email={person.email}
+          />
+        ))}
+      </Carousel>
 
       <br />
       <center>
