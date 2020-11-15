@@ -27,7 +27,7 @@ const useStyles = makeStyles({
  * 
  * @param {*} param0 
  */
-export default function EventCard({ event, openModal }) {
+export default function EventCard({ event, openDialog }) {
 
   const classes = useStyles();
 
@@ -57,7 +57,7 @@ export default function EventCard({ event, openModal }) {
                 
                 <Box display="flex" flexDirection="row" justifyContent="end" alignItems="end" className={classes.controlContent}>
                   <Box mr={1}>
-                    <Button variant="contained" onClick={() => openModal(event)}>Details</Button>
+                    <Button variant="contained" onClick={() => openDialog(event)}>Details</Button>
                   </Box>
                   <Button variant="contained" href={link}>Register</Button>
                 </Box>

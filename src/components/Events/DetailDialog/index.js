@@ -6,7 +6,12 @@ import Fade from '@material-ui/core/Fade';
 import TimeDisplay from '../TimeDisplay';
 import LocationDisplay from '../LocationDisplay';
 
-export default function DetailModal({ event, open, onClose }) {
+/**
+ * Pop-up dialog for displaying selected event
+ * 
+ * @param {*} param0 
+ */
+export default function DetailDialog({ event, open, onClose }) {
 
   const { title, startTime, endTime, location, content } = event;
 
