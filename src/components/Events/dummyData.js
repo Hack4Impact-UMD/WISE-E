@@ -50,6 +50,15 @@ export const dummyEvents = [
     startTime: '2021-11-05T19:00-04:00',
     endTime: '2021-12-06T00:30-04:00',
     link: 'https://google.com',
-    content: `This is a multiple day event.`,
+    content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sem mauris, finibus
+    vel scelerisque a, viverra at dui. Vivamus ornare sem massa. Donec accumsan nisl sit amet placerat
+    faucibus. Suspendisse vel augue at lacus maximus faucibus. Sed efficitur eros nec efficitur blandit.
+    Phasellus sed eros vitae felis ultricies fermentum. Fusce vitae arcu eu tellus condimentum imperdiet.
+    Nullam placerat lectus in neque hendrerit molestie. Etiam in risus laoreet elit congue laoreet.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sem mauris, finibus
+    vel scelerisque a, viverra at dui. Vivamus ornare sem massa. Donec accumsan nisl sit amet placerat
+    faucibus. Suspendisse vel augue at lacus maximus faucibus. Sed efficitur eros nec efficitur blandit.
+    Phasellus sed eros vitae felis ultricies fermentum. Fusce vitae arcu eu tellus condimentum imperdiet.
+    Nullam placerat lectus in neque hendrerit molestie. Etiam in risus laoreet elit congue laoreet.`,
   },
 ];
