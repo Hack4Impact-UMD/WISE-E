@@ -21,16 +21,13 @@ const useStyles = makeStyles({
     maxHeight: "80%",
     maxWidth: "80%",
   },
-  flex: {
-    display: "flex",
-  },
 });
 
 export default function CardTemplate(props) {
   const classes = useStyles();
 
   return (
-    <div className={classes.flex}>
+    <div display="flex">
       <Card className={classes.root}>
         <CardContent>
           <Typography

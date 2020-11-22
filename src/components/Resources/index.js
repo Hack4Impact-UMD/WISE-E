@@ -27,8 +27,6 @@ import partners from "./data/partnerData.json";
  * contentful integration for grants
  */
 
-var dateformat = /^(0?[1-9]|[12][0-9]|3[01])[\/\-](0?[1-9]|1[012])[\/\-]\d{4}$/;
-
 const useRowStyles = makeStyles({
   root: {
     "& > *": {
@@ -50,7 +48,6 @@ Row.propTypes = {
   }).isRequired,
 };
 
-//will need to add regex for date
 function createData(name, dueDate, amount, sponsor, description) {
   return {
     name,
