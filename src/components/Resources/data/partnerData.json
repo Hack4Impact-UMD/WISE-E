@@ -1,0 +1,130 @@
+{
+  "partners": [
+    {
+      "name": "Association of Women in Computing",
+      "link": "https://www.awc-hq.org/home.html",
+      "imgSrc": "https://www.awc-hq.org/Images/AWC-logo.jpg",
+      "alt": "Association of Women in Computing"
+    },
+    {
+      "name": "Royal Astrophysical Society",
+      "link": "",
+      "imgSrc": "",
+      "alt": "Royal Astrophysical Society"
+    },
+    {
+      "name": "American Physical Society",
+      "link": "https://www.aps.org/",
+      "imgSrc": "https://www.aps.org/images/logo-aps-sm.gif",
+      "alt": "American Physical Society"
+    },
+    {
+      "name": "American Chemical Society",
+      "link": "https://www.acs.org/content/acs/en.html",
+      "imgSrc": "https://assets.acs.org/v2.0/acs-bootstrap/images/acs-logo.svg",
+      "alt": "American Chemical Society"
+    },
+    {
+      "name": "ALearn",
+      "link": "",
+      "imgSrc": "https://static1.squarespace.com/static/596133eed2b85754d958a172/t/59b94cf7b7411cfd32080f1b/1505316097647/Alearn-logo.jpg",
+      "alt": "ALearn"
+    },
+    {
+      "name": "National Society of Black Engineers",
+      "link": "https://www.nsbe.org/home.aspx",
+      "imgSrc": "https://www.science.smith.edu/nsbe/wp-content/uploads/sites/50/2018/10/cropped-nsbelogo_regional_headers-orange.png",
+      "alt": "National Society of Black Engineers"
+    },
+    {
+      "name": "Center for Energy Workforce Development",
+      "link": "https://cewd.org/",
+      "imgSrc": "http://cewd.org/wp-content/uploads/2017/08/cewd-logo.png",
+      "alt": "Center for Energy Workforce Development"
+    },
+    {
+      "name": "National Science Foundation",
+      "link": "https://www.nsf.gov/",
+      "imgSrc": "https://upload.wikimedia.org/wikipedia/commons/7/7e/NSF_logo.png",
+      "alt": "National Science Foundation"
+    },
+    {
+      "name": "Center for Women in Technology",
+      "link": "",
+      "imgSrc": "",
+      "alt": "Center for Women in Technology"
+    },
+    {
+      "name": "Women of Color in Science Award and Foundation",
+      "link": "",
+      "imgSrc": "",
+      "alt": "Women of Color in Science Award and Foundation"
+    },
+    {
+      "name": "Black Girls Code",
+      "link": "https://www.blackgirlscode.com/",
+      "imgSrc": "data:image/jpeg;base64,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",
+      "alt": "Black Girls Code"
+    },
+    {
+      "name": "Borg Institute for Women in Technology",
+      "link": "https://anitab.org/",
+      "imgSrc": "https://www.ncwit.org/sites/default/files/styles/small/public/anitab-org_logo_rgb.jpg?itok=ZYBihJS0",
+      "alt": "Borg Institute for Women in Technology"
+    },
+    {
+      "name": "National Center for Women in Information Technology",
+      "link": "https://www.ncwit.org/",
+      "imgSrc": "https://www.ncwit.org/sites/all/themes/ncwit/images/ncwit-logo-234.png",
+      "alt": "National Center for Women in Information Technology"
+    },
+    {
+      "name": "Association of Computing Machinery",
+      "link": "https://www.acm.org/",
+      "imgSrc": "https://www.acm.org/images/top-menu/acm_logo_tablet.svg",
+      "alt": "Association of Computing Machinery"
+    },
+    {
+      "name": "ADA Initiative",
+      "link": "https://adainitiative.org/",
+      "imgSrc": "",
+      "alt": "ADA Initiative"
+    },
+    {
+      "name": "Computing Research Association",
+      "link": "https://cra.org/",
+      "imgSrc": "https://cra.org/wp-content/uploads/2015/05/logo.png",
+      "alt": "Computing Research Association"
+    },
+    {
+      "name": "WorldWit",
+      "link": "http://www.worldwit.org/",
+      "imgSrc": "http://www.worldwit.org/wp-content/uploads/2016/11/women-in-technology-logo-300x144.jpg",
+      "alt": "WorldWit"
+    },
+    {
+      "name": "UNESCO",
+      "link": "https://en.unesco.org/",
+      "imgSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Flag_of_UNESCO.svg/220px-Flag_of_UNESCO.svg.png",
+      "alt": "UNESCO"
+    },
+    {
+      "name": "Girls Who Code",
+      "link": "https://girlswhocode.com/",
+      "imgSrc": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATYAAACjCAMAAAA3vsLfAAAAilBMVEUDnIwAlooAmYz///8Ak4cAmIdsuLAAkYUAmY3r9/aYzMaYz8cAnIwAlYRes6vP6Oai0cw3qpxft6w5ppy839tsvLIcnZEAjH7h8vD3/Pzu+PfX7evK5uOu2NS/4d6Mx8Exo5h/xLtWsKhPsqYhpJVKq6J1wLae0suz3tmOyMItp5mEx756vrhlta4SPZFdAAAM80lEQVR4nO3d6WKiOhQAYJZgtFfEqa2odetia0f7/q93c04CRQVJSCKk0/NjxrqA+XqykqoXOBa+1Qg8yWibQTH6dtlk1Vxjs6v2y9YopOvoL1sxpNUcY7Or9svWKOTrqFtsdtUUks0pNstqv2yNQqGOusRmWU0l2Rxis62mkmzusNlWU0o2Z9isqyklmyts1tXUks0RNvtqasnmBJt9NNVkc4DtFmiqap1nuwmaU2ziHQf9umd0T60ttsvFbbgzf/SGYo3U2mK7qUpdKPairbG17XQW6mqtsFm+/KQaDdRaYWvb6TSaqP2yNVJrg61tqJNopvavszVUa4GtSx1CU7V/O9saq7XA1rZVHg1Gub9sGqn2D7PppNq/y6aHVmTjyw5BcGUh56ew6aJlbCWH/rls+mjIVn2CbqERovHivEgm0Bjb9bMYrrAkeBlNaZPiErod7UjVSylGPashNM+rPZNJODIOWawbZA2ZzNgr55+x+GWf/ra3iwGL+cvVAxsjk2IzWFXJOsRYKucbmfBXhv9FxTcv9LJHR5VsgVEzOTZTbv4zK9pgfrV8FRE/sVdBvoVlZQj+VLMZB5NnMwRHmNg4DRasmqqlW+C9MpTXGHTeo8syDAXbPTwmTmYFS5XNhJvfC8OFH9BP9p8Sm+dFH2GYxF68DMOPEjavyHabkP+V6wZ5YMlGArJjBVRT8+IkDD8jL1qF4coxNm03wmrniCXdlBVwqnBaYBugCbCNXWPTdUMu6PvY/1slteGQtYp/PKykz86xacKxZn3uMzWixIZvcshe8nc4jLiec2w6bv6RDSEIDLRUKqmXs7150T3rTKKhg2xSbj4pe5rPetCE9Nm0Q6VLEO8S2WDwVtqRdp9NAo7cj3slz4KJFUyryJbljOxwV7zJN2YyhGRjeI6y1U1SIavC90s3wrrBB2AbheGT7LjthI21bB+xs2w1CUdgHrQipWwrxkU2jE+SLRvrA1u0hJatvBBusF118+9YASYl2bbnbJSNejeSlTR7k8C2h/mV22xX4fzDalfWtolso2xGvmvAFlaM2SCcYbvWwpX3pBkbjHol1bI6OuRs/5U3bJ5LbMpjOOhJGRs5yq+3IdvQi6JPrlY2ZHOOLYfzSczy6zvH8lvsflz/5z/cYVdAl1nTdrmITSjNb8FjzCyK47fNAEzeY3a7MNiFn7If3WJDEN/v7ZP1Z7BLDrz7JMeEt23+OFmvxv8d3qfwI/SgLM1gsAubZ8g2WW9OLyvQl/WKS9K7ZMJuscno/mkg1nXjvx/L9XMGFb19rpP9fVzLhm+E/+I8g4twemwscJGfTTcXbKaJ73HCeBDwJczChxQ8wngN8JIUZGCcEq78POMILCyFPfgZFrkTCtn2mh9i/oH/7TlU/MzvTarZqi6SmVjBDHTZ8kV+CEwyksAkCvwO+QMTnw9zB5QOOA354o8spsKNTDGt7qh46gzYcGIQzjZ/vs+BU/koP/QTNniXbLUXFpvq8d+GLhswhKvjZpax+VDSJBZ9wNN4v2aDe7ykxCZVc/ollnbhdUu4rDAjQm2BJV8h2xeyBV70yG68xbgaHg4OLFP5pPQvvPDwDCfFRfJzNoUCBPJ+hfzVZIOaF+5SQtO7jG2Qs7HG/y4l6UCwwcpHn5X0k/LXzSmMgEX/0Ae1mZg/wKMDZGNd6APLJ6ir+yiK2RhmzWppzKrzjHUI0QzXys/ZGpYlqBAMSqq7Jhv0iytoqvx0AXWxD/2lqKSE10cY3n4BDSQYc5pj67VAvjQR81MCQ4zDkTdpOP8apHANYc/Ti7HNY143l7GHs1MggmScQydxcglGr0RyocuW1UCEmBBY3ghF4eHmlM8KsKGn/CrpAWYKn5wPGjEc+5KXcN5Le5hk7OEV5CJji9lrHwtsz9CY8QtV0KQN/4obBTZdELnQraTQ3hfYUlgS4xkENIAAXeYRaXDQCk09jkI2cAOmDLiXl/RZV7oTP9EEVT2xzoZsC2B7R7boVSRZCZtecaTDQLbxi7pwEXRCoXb1uQ3USZyDMoMxVj3MRJiOpmuRVnjX99FAE3IXjsUSFbNrBlz3go39P4h58gEb/Dw/adv0SiMfumwsldbYtgHgdIrlxhpGeyIRocY9wVNSGGst2S18CKs2MM++h7zpDFtKAo+z9nAIdRR2L2RcXpZdIV8Mife8i8jZTGxJkgrdSgoVb5PSFDfFQD/5kNIFdK7buRjXYmfbSylM5Vkc0xQatFVKKU132UiNB8U1p5TgWCRJYxjhQl8GbJB1w2gBK5UxjHFmEf//vjAAUd4j0Ti0GwOoT4MHHIKFD3DZHRfU5tj8b3kxEGE9zwaoS2zhequ7O7i1KB4Mamm4ZjYwhXiCf3CrTJ5tEfxykgSPM18/4VBn6CIb+Z5BYbC6l08c3nkeQU3kMc4eWfS32X0nS2/0yO+c+zw1wyXOQXHUi7OqN4GfTVQHfIrqHBtDwsllyEcX2Pbzwi9GWe2j2IWGsxdKd1jeZZ/0+aQg2Z6WlBMPtoTv6RI7F6DHfMCb0Su6HaBVg/Q+XQG5IZu+G50cN70pRRmRX9Pj4aWwZZT2e5vjBNaCCBkd2C0YcBzH483kYu0InjqCl9Ld5v0tW2GLXg/ZLe/x8DiMvPjt/cAe91pjMwAHgS1YNi/3ydk+W5Lfkd8ilJZuxs0f94vrGd+32Zzq5P/W2EwMrVNojHqNduVWRd3MuhAtsWnD8ebM7Lt2gU1vBiw6z+ynmpB8WoTB390wuhp/T9jqDlx4D02j8CvTgOMD1IytVxN8uxF5qXnaIwRfCxp6j1fjuchGdnVvIH8PZcHXj/giUlC2aHTG1twthQHuN1tYE1/8CsxT3fOwbxadpcxzBRsdSzy1V7Y7+kozcMZ39mAjNZxDwrCXyLGJ0iUyEk+W2L7O2eTWeDO98/ubsPVhBzjMi5xlU72ucPl89YSDOeiAFi62S5auM2yKZhWhqIaLiztYOZs7yWYGTdmNL7m5ymbyzz5UKiougWzJJVvP71eE4OZsD6T8SXix+ZztcVgebyVsg4oDn7AZ/mMZhWR7wPVdGPCesdUMKTO2igkZLWWr2ORRxjYrPTA5YTOLpuQ2zxfZ5rQttqk0m19kM64mXVGhQ4DL7Ph/apAtts9mQc2TTDixj4hv23CLzY6anBsdi43Mhd1+brDZUpOqqPAeoeRwWW9ski2yzGZ1B2EtG1RSqJywQebLYE8a6LOl5StG1490IzecIzynKWzqyO4zweapsAVlbIPtpDRuwlZbUWFfUTiDnWZZHe0I2/WwzVaXcLhpCCtFzmSAzXOfrcaNjnBp9+H7npuz+Z1kq6mohO56o36h9PpswY9gq62op5c09Nm8H8KmtCiizRb8GDaVyb02m2eCrWoAMpn8YfFW+YdIpkM64XTZPCNsFcNd1p7gtl8tCbVlutuwBYbYqnZW6IBBVG3Ev/KKW7DxU3WVjf8Rnuqr7LOJE1lj01oHz/7KU/2Fltmy8yiwBUpsDcHwREFjNgk4Hbb8LB1kC7TYamuqBtv3ObrHFuiy1cA1ZyucwRZb46YtMMB2Fa4xm1e49FmxKF52ldRXYcvOoaWm0a1UN3G8DF9Vw01yypY9jZKTnX5iL/gp231ctimQ0H4ZW0pLzk2zFym6BabYvMqM42XAz3QtC/E5r4JtXvm0ErbKY5awhVXPhVjs1eakgUm2CriwJrqwB2RZ+ZkiMmr6eyBK6qpk6dxhu1AzsnXkp7Ndqln5YHLJ0v2yncrVvWWVLc8dYCtRM7q/K5O7ux4fE3wWObLb/9XFs9hgf+UpFwceXTm5eM1H2YdFy6sZ/wxpoKM1IXQJKR2FnQU/7LU/5yAXB64+NTk7blfY+IlKxyWnYe7MEifLo0lhbsUmTncDMYwfxVZ6XisnsMpWrnYDNuvxy9YobLJVqP0ANqU/21E++C+b3+BvqyrZTPdrNw+VZDPI5rpbW2y2NujfKFTYFA9dqSY+m9LlhGuRzWE3mx1pLZu7FVVFTbGQ1WqFD5C1Uyrr0TabmxVV7W/UFY8txeZkwllku6J29inPlspmMZTUbLG5V1GV1NRKp8DmWsKpJZtFNrfcusPmUkVV/KwXtWMrsjmUcGpqagmhzuZMwimyKR27AZsjCaeodgM2J9w6yOZARVVVU2K7qnb1u2BsFddUdJSt4wmnrHYrtk4nXIMPhFQ6vA5bh93U1cwN2yS+58pWsTVDXe22bN1s4Zp8ZqtKQa6ryX2rmrXCN48GagabNskvo+tcwjVRuz1b1+AaqbXB1im3hp/irXQKQ2wdgmv62edK5zDG1pWuofEnxiudxCBbJ+Aaqxkctil/rWvrNbX5tzq0ydY2nMZ3YRgc7Tb6EuEW4XS+ekXpPBbY2oPTQOsCWztwmt9zq3QqS2wtwOl+O7DSuayx3RpOE81oRxr8D3W2Uj3ErS4vAAAAAElFTkSuQmCC",
+      "alt": "Girls Who Code"
+    },
+    {
+      "name": "500 Women Scientist",
+      "link": "https://500womenscientists.org/",
+      "imgSrc": "https://static1.squarespace.com/static/582cce42bebafbfc47a82b04/t/5f57f2928a58d564a4722b82/1604622018391/",
+      "alt": "500 Women Scientist"
+    },
+    {
+      "name": "Femmes et Mathématiques",
+      "link": "https://femmes-et-maths.fr/",
+      "imgSrc": "https://femmes-et-maths.fr/wp-content/uploads/2019/08/logofetm-300x156.jpg",
+      "alt": "Femmes et Mathématiques"
+    }
+  ]
+}

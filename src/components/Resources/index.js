@@ -21,6 +21,7 @@ import Grid from "@material-ui/core/Grid";
 import msg from "./sampleData.json";
 import alliances from "./data/allianceData.json";
 import networks from "./data/networkData.json";
+import partners from "./data/partnerData.json";
 //will need contentful integration
 
 const useRowStyles = makeStyles({
@@ -124,14 +125,18 @@ const Resources = (props) => {
       <Container>
         <h2>Our Partners</h2>
         <div className={classes.resourceCards}>
-          {msg.samplePartner.map((item) => (
-            <CardTemplate
-              name={item.name}
-              link={item.link}
-              imgSrc={item.imgSrc}
-              alt={item.alt}
-            />
-          ))}
+          <Grid container spacing={1}>
+            {partners.partners.map((item) => (
+              <Grid item sm={2}>
+                <CardTemplate
+                  name={item.name}
+                  link={item.link}
+                  imgSrc={item.imgSrc}
+                  alt={item.alt}
+                />
+              </Grid>
+            ))}
+          </Grid>
         </div>
       </Container>
       <Container>
