@@ -20,6 +20,7 @@ import Grid from "@material-ui/core/Grid";
 
 import msg from "./sampleData.json";
 import alliances from "./data/allianceData.json";
+import networks from "./data/networkData.json";
 //will need contentful integration
 
 const useRowStyles = makeStyles({
@@ -104,20 +105,24 @@ const Resources = (props) => {
         <h1>Resources</h1>
       </Container>
       <Container>
-        <h2>{msg.Network.title}</h2>
+        <h2>Our Networks</h2>
         <div className={classes.resourceCards}>
-          {msg.sampleNetwork.map((item) => (
-            <CardTemplate
-              name={item.name}
-              link={item.link}
-              imgSrc={item.imgSrc}
-              alt={item.alt}
-            />
-          ))}
+          <Grid container spacing={1}>
+            {networks.networks.map((item) => (
+              <Grid item sm={2}>
+                <CardTemplate
+                  name={item.name}
+                  link={item.link}
+                  imgSrc={item.imgSrc}
+                  alt={item.alt}
+                />
+              </Grid>
+            ))}
+          </Grid>
         </div>
       </Container>
       <Container>
-        <h2>{msg.Partners.title}</h2>
+        <h2>Our Partners</h2>
         <div className={classes.resourceCards}>
           {msg.samplePartner.map((item) => (
             <CardTemplate
@@ -130,7 +135,7 @@ const Resources = (props) => {
         </div>
       </Container>
       <Container>
-        <h2>{msg.Alliances.title}</h2>
+        <h2>Our Alliances</h2>
         <div className={classes.resourceCards}>
           <Grid container spacing={1}>
             {alliances.alliances.map((item) => (

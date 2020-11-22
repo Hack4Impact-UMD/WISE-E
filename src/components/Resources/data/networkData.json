@@ -1,0 +1,106 @@
+{
+  "networks": [
+    {
+      "name": "Association for Women in Science",
+      "link": "https://www.awis.org/",
+      "imgSrc": "https://www.awis.org/wp-content/uploads/awis-social-image-card.jpg",
+      "alt": "Association for Women in Science"
+    },
+    {
+      "name": "Women in Science Technology Networks",
+      "link": "https://www.technologynetworks.com/immersive/women-in-science",
+      "imgSrc": "",
+      "alt": "Women in Science Technology Networks"
+    },
+    {
+      "name": "African Women in Science Network",
+      "link": "https://aawse.org/",
+      "imgSrc": "https://aawse.org/wp-content/uploads/2020/09/website_header_1.jpg",
+      "alt": "African Women in Science Network"
+    },
+    {
+      "name": "Women in Technology International",
+      "link": "https://www.inwes.org/",
+      "imgSrc": "https://www.genderportal.eu/sites/default/files/logo%20inwes.jpg",
+      "alt": "Women in Technology International"
+    },
+    {
+      "name": "Organization for Science and Women in the Developing World",
+      "link": "https://owsd.net/",
+      "imgSrc": "https://pbs.twimg.com/profile_images/823564159954681857/SDVuP9xN.jpg",
+      "alt": "Organization for Science and Women in the Developing World"
+    },
+    {
+      "name": "African Association of Women in Geo Sciences",
+      "link": "http://www.aawg.org/",
+      "imgSrc": "",
+      "alt": "African Association of Women in Geo Sciences"
+    },
+    {
+      "name": "Society of Women Engineers",
+      "link": "https://swe.org/",
+      "imgSrc": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0e/Society_of_Women_Engineers_logo.svg/1200px-Society_of_Women_Engineers_logo.svg.png",
+      "alt": "Society of Women Engineers"
+    },
+    {
+      "name": "Third World Women in Science",
+      "link": "",
+      "imgSrc": "",
+      "alt": "Third World Women in Science"
+    },
+    {
+      "name": "Association for Women in Mathematics",
+      "link": "https://awm-math.org/",
+      "imgSrc": "https://awm-math.org/wp-content/uploads/2018/08/awmlogo3b.png",
+      "alt": "Association for Women in Mathematics"
+    },
+    {
+      "name": "Earth Science Women's Network",
+      "link": "https://eswnonline.org/",
+      "imgSrc": "https://earthzine.org/wp-content/uploads/2017/05/ESWN1.png",
+      "alt": "Earth Science Women's Network"
+    },
+    {
+      "name": "WomenNet",
+      "link": "",
+      "imgSrc": "",
+      "alt": "WomenNet"
+    },
+    {
+      "name": "Association for Women Geoscientists",
+      "link": "https://www.awg.org/",
+      "imgSrc": "http://awg.org/images/AWG-Logo.png",
+      "alt": "Association for Women Geoscientists"
+    },
+    {
+      "name": "Women in Technology",
+      "link": "https://www.womenintechnology.org/",
+      "imgSrc": "https://www.womenintechnology.org/assets/site/NEW_WiT%202%20Color%20Logo.png",
+      "alt": "Women in Technology"
+    },
+    {
+      "name": "European Platform for Women Scientists",
+      "link": "https://epws.org/",
+      "imgSrc": "https://epws.org/wp-content/uploads/2018/02/EPWS-LOGO-SQUARE-BIG.jpg",
+      "alt": "European Platform for Women Scientists"
+    },
+    {
+      "name": "WomensHub",
+      "link": "",
+      "imgSrc": "",
+      "alt": "WomensHub"
+    },
+    {
+      "name": "Society for Canadian Women in Science",
+      "link": "https://scwist.ca/",
+      "imgSrc": "https://weballiance.ca/wp-content/uploads/2015/10/scwisthorizontaltransparent-300x96.png",
+      "alt": "Society for Canadian Women in Science"
+    },
+    {
+      "name": "Women Engineering Society",
+      "link": "https://www.wes.org.uk/",
+      "imgSrc": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f2/WESlogo.svg/1200px-WESlogo.svg.png",
+      "alt": "Women Engineering Society"
+    }
+  ]
+}
