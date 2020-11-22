@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Container } from "@material-ui/core";
-import msg from "./sampleData.json";
 import PropTypes from "prop-types";
 import { makeStyles } from "@material-ui/core/styles";
 import Box from "@material-ui/core/Box";
@@ -17,7 +16,10 @@ import Paper from "@material-ui/core/Paper";
 import KeyboardArrowDownIcon from "@material-ui/icons/KeyboardArrowDown";
 import KeyboardArrowUpIcon from "@material-ui/icons/KeyboardArrowUp";
 import CardTemplate from "./CardTemplate";
+import Grid from "@material-ui/core/Grid";
 
+import msg from "./sampleData.json";
+import alliances from "./data/allianceData.json";
 //will need contentful integration
 
 const useRowStyles = makeStyles({
@@ -117,7 +119,7 @@ const Resources = (props) => {
       <Container>
         <h2>{msg.Partners.title}</h2>
         <div className={classes.resourceCards}>
-        {msg.samplePartner.map((item) => (
+          {msg.samplePartner.map((item) => (
             <CardTemplate
               name={item.name}
               link={item.link}
@@ -130,14 +132,18 @@ const Resources = (props) => {
       <Container>
         <h2>{msg.Alliances.title}</h2>
         <div className={classes.resourceCards}>
-        {msg.sampleAlliance.map((item) => (
-            <CardTemplate
-              name={item.name}
-              link={item.link}
-              imgSrc={item.imgSrc}
-              alt={item.alt}
-            />
-          ))}
+          <Grid container spacing={1}>
+            {alliances.alliances.map((item) => (
+              <Grid item sm={2}>
+                <CardTemplate
+                  name={item.name}
+                  link={item.link}
+                  imgSrc={item.imgSrc}
+                  alt={item.alt}
+                />
+              </Grid>
+            ))}
+          </Grid>
         </div>
       </Container>
       <Container>

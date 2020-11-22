@@ -6,8 +6,8 @@ import Typography from "@material-ui/core/Typography";
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: 200,
-    maxHeight: 200,
+    width: 200,
+    height: 200,
     marginRight: 20,
   },
   title: {
@@ -21,7 +21,11 @@ const useStyles = makeStyles({
     textDecoration: "none",
   },
   imageProps:{
-    maxHeight: 70
+    maxHeight: 70,
+    maxWidth: 80
+  },
+  flex:{
+    display: "flex"
   }
 });
 
@@ -29,6 +33,7 @@ export default function CardTemplate(props) {
   const classes = useStyles();
 
   return (
+    <div className={classes.flex}>
     <Card className={classes.root}>
       <CardContent>
         <Typography
@@ -45,5 +50,6 @@ export default function CardTemplate(props) {
         </Typography>
       </CardContent>
     </Card>
+    </div>
   );
 }
