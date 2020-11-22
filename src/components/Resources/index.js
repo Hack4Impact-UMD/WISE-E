@@ -18,11 +18,16 @@ import KeyboardArrowUpIcon from "@material-ui/icons/KeyboardArrowUp";
 import CardTemplate from "./CardTemplate";
 import Grid from "@material-ui/core/Grid";
 
-import msg from "./sampleData.json";
 import alliances from "./data/allianceData.json";
 import networks from "./data/networkData.json";
 import partners from "./data/partnerData.json";
-//will need contentful integration
+
+/**
+ * TODO:
+ * contentful integration for grants
+ */
+
+var dateformat = /^(0?[1-9]|[12][0-9]|3[01])[\/\-](0?[1-9]|1[012])[\/\-]\d{4}$/;
 
 const useRowStyles = makeStyles({
   root: {
@@ -45,10 +50,33 @@ Row.propTypes = {
   }).isRequired,
 };
 
+//will need to add regex for date
+function createData(name, dueDate, amount, sponsor, description) {
+  return {
+    name,
+    dueDate,
+    amount,
+    sponsor,
+    description,
+  };
+}
+
+//sample data
 const rows = [
-  createData("Grant 1", "11/01/2020"),
-  createData("Grant 2", "11/02/2020"),
-  createData("Grant 3", "11/03/2020"),
+  createData(
+    "Women to Women Giving Circle Grants Program Grant",
+    "10/30/20",
+    "$1000 to $10,000",
+    "Illinois Prairie Community Foundation (IPCF)",
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras finibus nulla in orci hendrerit, nec fermentum lectus molestie. Suspendisse pellentesque dapibus nisl. Aliquam laoreet facilisis lobortis. Vestibulum blandit consectetur ligula sit amet pellentesque. Etiam ac auctor erat. Vestibulum vitae ex orci. Pellentesque accumsan sed eros in consequat. Sed elementum vitae lacus eget varius. Suspendisse hendrerit velit arcu, sed condimentum leo dictum eget. Proin sollicitudin sed ligula ac aliquet. Suspendisse et luctus urna. Morbi in libero urna."
+  ),
+  createData(
+    "Caress Dreams to Reality Fund ",
+    "11/13/20",
+    "<$1000",
+    "IFundWomen",
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras finibus nulla in orci hendrerit, nec fermentum lectus molestie. Suspendisse pellentesque dapibus nisl. Aliquam laoreet facilisis lobortis. Vestibulum blandit consectetur ligula sit amet pellentesque. Etiam ac auctor erat. Vestibulum vitae ex orci. Pellentesque accumsan sed eros in consequat. Sed elementum vitae lacus eget varius. Suspendisse hendrerit velit arcu, sed condimentum leo dictum eget. Proin sollicitudin sed ligula ac aliquet. Suspendisse et luctus urna. Morbi in libero urna."
+  ),
 ];
 
 function Row(props) {
@@ -71,6 +99,7 @@ function Row(props) {
         <TableCell component="th" scope="row">
           {row.name}
         </TableCell>
+        <TableCell align="left">{row.sponsor}</TableCell>
         <TableCell align="right">{row.dueDate}</TableCell>
       </TableRow>
       <TableRow>
@@ -80,21 +109,13 @@ function Row(props) {
               <Typography variant="h6" gutterBottom component="div">
                 Description
               </Typography>
-              <p>Random description for grant placed here</p>
+              <p>{row.description}</p>
             </Box>
           </Collapse>
         </TableCell>
       </TableRow>
     </React.Fragment>
   );
-}
-
-//change this to apply to grant information
-function createData(name, dueDate) {
-  return {
-    name,
-    dueDate,
-  };
 }
 
 const Resources = (props) => {
@@ -105,6 +126,7 @@ const Resources = (props) => {
       <Container>
         <h1>Resources</h1>
       </Container>
+
       <Container>
         <h2>Our Networks</h2>
         <div className={classes.resourceCards}>
@@ -122,6 +144,7 @@ const Resources = (props) => {
           </Grid>
         </div>
       </Container>
+
       <Container>
         <h2>Our Partners</h2>
         <div className={classes.resourceCards}>
@@ -139,6 +162,7 @@ const Resources = (props) => {
           </Grid>
         </div>
       </Container>
+
       <Container>
         <h2>Our Alliances</h2>
         <div className={classes.resourceCards}>
@@ -156,14 +180,16 @@ const Resources = (props) => {
           </Grid>
         </div>
       </Container>
+
       <Container>
-        <h2>{msg.Grants.title}</h2>
+        <h2>Grants</h2>
         <TableContainer component={Paper} className="resource-table">
           <Table aria-label="collapsible table">
             <TableHead>
               <TableRow>
                 <TableCell />
                 <TableCell>Grant Name</TableCell>
+                <TableCell>Sponsor</TableCell>
                 <TableCell align="right">Due Date</TableCell>
               </TableRow>
             </TableHead>
