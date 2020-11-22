@@ -97,6 +97,7 @@ function Row(props) {
           {row.name}
         </TableCell>
         <TableCell align="left">{row.sponsor}</TableCell>
+        <TableCell align="left">{row.amount}</TableCell>
         <TableCell align="right">{row.dueDate}</TableCell>
       </TableRow>
       <TableRow>
@@ -187,6 +188,7 @@ const Resources = (props) => {
                 <TableCell />
                 <TableCell>Grant Name</TableCell>
                 <TableCell>Sponsor</TableCell>
+                <TableCell>Amount</TableCell>
                 <TableCell align="right">Due Date</TableCell>
               </TableRow>
             </TableHead>
