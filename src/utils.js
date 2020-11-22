@@ -18,6 +18,7 @@ export function renderRichTextDocument(document) {
       'embedded-asset-block': node => {
         const file = node.data.target.fields.file;
 
+        // TODO: Account for more file types as needed
         switch (file.contentType) {
           case 'image/png':
           case 'image/jpeg':
@@ -25,7 +26,7 @@ export function renderRichTextDocument(document) {
           case 'audio/x-wav':
             return (
               <audio controls>
-                <source src={file.url} type="audio/ogg" />
+                <source src={file.url} type="audio/x-wav" />
                 Your browser does not support the audio element.
               </audio>
             );
