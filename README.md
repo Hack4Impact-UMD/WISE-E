@@ -1,3 +1,5 @@
+# WISE-E
+
 This project is a website for the Women in Science, Engineering, and the Environment initiative, a collaboration between the [Center for Sustainable Communities](http://csc-atl.org/) and the IEEE [Women in Geoscience and Remote Sensing Society](http://www.grss-ieee.org/community/idea/). 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). It uses [material-ui](https://material-ui.com/). 
@@ -11,12 +13,18 @@ The team consists of
 * Shivanee Arun 
 * Natnael Mekonnen
 
-## Installations 
+## Setup 
 
-* `npm install`
-* `npm install @material-ui/core`
-* `npm install @material-ui/icons`
-* `npm i react-router-dom`
+Create create a `.env` using the `sample.env` template and fill it out
+with the proper credentials.
+
+Then install modules and run development server with:
+
+    npm install
+    npm start
+
+
+***
 
 ## Available Scripts
 
