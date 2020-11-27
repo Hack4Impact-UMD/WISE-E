@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link as RouterLink } from 'react-router-dom';
 import { makeStyles, Toolbar, Typography, Button, Link } from '@material-ui/core';
-import '../index.css';
 
 const sections = [
     { title: "Home", url: "/home"},
