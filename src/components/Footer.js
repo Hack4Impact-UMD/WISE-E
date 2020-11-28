@@ -7,7 +7,7 @@ import Link from '@material-ui/core/Link';
 
 function Copyright() {
   return (
-    <Typography variant="body2" color="textSecondary" align="center">
+    <Typography variant="body2" color="white" align="center">
       {'Copyright © '}
       <Link color="inherit" href="https://material-ui.com/">
         WISE-E
@@ -20,9 +20,10 @@ function Copyright() {
 
 const useStyles = makeStyles((theme) => ({
   footer: {
-    backgroundColor: theme.palette.background.paper,
-    // marginTop: theme.spacing(8),
-    padding: theme.spacing(6, 0),
+    backgroundColor: '#295F70',
+    color: 'white',
+    marginTop: theme.spacing(8),
+    padding: theme.spacing(10, 0),
   },
 }));
 
@@ -36,7 +37,7 @@ export default function Footer(props) {
         <Typography variant="h6" align="center" gutterBottom>
           {title}
         </Typography>
-        <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
+        <Typography variant="subtitle1" align="center" color="white" component="p">
           {description}
         </Typography>
         <Copyright />
