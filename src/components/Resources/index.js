@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Container } from "@material-ui/core";
 import PropTypes from "prop-types";
 import { makeStyles } from "@material-ui/core/styles";
@@ -22,10 +22,6 @@ import alliances from "./data/allianceData.json";
 import networks from "./data/networkData.json";
 import partners from "./data/partnerData.json";
 
-/**
- * TODO:
- * contentful integration for grants
- */
 
 const useRowStyles = makeStyles({
   root: {
@@ -44,37 +40,8 @@ const useCardStyles = makeStyles({
 Row.propTypes = {
   row: PropTypes.shape({
     name: PropTypes.string.isRequired,
-    dueDate: PropTypes.string.isRequired,
   }).isRequired,
 };
-
-function createData(name, dueDate, amount, sponsor, description) {
-  return {
-    name,
-    dueDate,
-    amount,
-    sponsor,
-    description,
-  };
-}
-
-//sample data
-const rows = [
-  createData(
-    "Women to Women Giving Circle Grants Program Grant",
-    "10/30/20",
-    "$1000 to $10,000",
-    "Illinois Prairie Community Foundation (IPCF)",
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras finibus nulla in orci hendrerit, nec fermentum lectus molestie. Suspendisse pellentesque dapibus nisl. Aliquam laoreet facilisis lobortis. Vestibulum blandit consectetur ligula sit amet pellentesque. Etiam ac auctor erat. Vestibulum vitae ex orci. Pellentesque accumsan sed eros in consequat. Sed elementum vitae lacus eget varius. Suspendisse hendrerit velit arcu, sed condimentum leo dictum eget. Proin sollicitudin sed ligula ac aliquet. Suspendisse et luctus urna. Morbi in libero urna."
-  ),
-  createData(
-    "Caress Dreams to Reality Fund ",
-    "11/13/20",
-    "<$1000",
-    "IFundWomen",
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras finibus nulla in orci hendrerit, nec fermentum lectus molestie. Suspendisse pellentesque dapibus nisl. Aliquam laoreet facilisis lobortis. Vestibulum blandit consectetur ligula sit amet pellentesque. Etiam ac auctor erat. Vestibulum vitae ex orci. Pellentesque accumsan sed eros in consequat. Sed elementum vitae lacus eget varius. Suspendisse hendrerit velit arcu, sed condimentum leo dictum eget. Proin sollicitudin sed ligula ac aliquet. Suspendisse et luctus urna. Morbi in libero urna."
-  ),
-];
 
 function Row(props) {
   const { row } = props;
@@ -82,7 +49,7 @@ function Row(props) {
   const classes = useRowStyles();
 
   return (
-    <React.Fragment>
+    <>
       <TableRow className={classes.root}>
         <TableCell>
           <IconButton
@@ -112,12 +79,31 @@ function Row(props) {
           </Collapse>
         </TableCell>
       </TableRow>
-    </React.Fragment>
+    </>
   );
 }
 
+
 const Resources = (props) => {
   const classes = useCardStyles();
+  const [grants, setGrants] = useState([]);
+  const contentful = require("contentful");
+
+
+  useEffect(() => {
+    const client = contentful.createClient({
+      space: "g79vk6o1szlh",
+      accessToken: "HaMELtyUJaegKAtD30E2WqMHfVjwHPFEs-npzky8mFA",
+    });
+    client.getEntries({ content_type: "grants" }).then((response) => {
+      setGrants(response.items);
+      console.log(response.items);
+    });
+  }, []);
+
+  const resourceGrants = grants.map((grant, i) => (
+    <Row key={grant.fields.name} row={grant.fields} id = {i} key = {i}/>
+  ));
 
   return (
     <>
@@ -193,9 +179,7 @@ const Resources = (props) => {
               </TableRow>
             </TableHead>
             <TableBody>
-              {rows.map((row) => (
-                <Row key={row.name} row={row} />
-              ))}
+              {resourceGrants}
             </TableBody>
           </Table>
         </TableContainer>
