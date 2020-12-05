@@ -3,6 +3,8 @@ import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
+import Box from '@material-ui/core/Box';
+
 
 const useStyles = makeStyles({
   root: {
@@ -27,7 +29,7 @@ export default function CardTemplate(props) {
   const classes = useStyles();
 
   return (
-    <div display="flex">
+    <Box display="flex">
       <Card className={classes.root}>
         <CardContent>
           <Typography
@@ -48,6 +50,6 @@ export default function CardTemplate(props) {
           </Typography>
         </CardContent>
       </Card>
-    </div>
+    </Box>
   );
 }
