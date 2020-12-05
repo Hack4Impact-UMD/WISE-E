@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Container } from "@material-ui/core";
-import msg from "./sampleData.json";
 import PropTypes from "prop-types";
 import { makeStyles } from "@material-ui/core/styles";
 import Box from "@material-ui/core/Box";
@@ -16,8 +15,14 @@ import Typography from "@material-ui/core/Typography";
 import Paper from "@material-ui/core/Paper";
 import KeyboardArrowDownIcon from "@material-ui/icons/KeyboardArrowDown";
 import KeyboardArrowUpIcon from "@material-ui/icons/KeyboardArrowUp";
-
 import CardTemplate from "./CardTemplate";
+import Grid from "@material-ui/core/Grid";
+
+import alliances from "./data/allianceData.json";
+import networks from "./data/networkData.json";
+import partners from "./data/partnerData.json";
+
+
 const useRowStyles = makeStyles({
   root: {
     "& > *": {
@@ -35,15 +40,8 @@ const useCardStyles = makeStyles({
 Row.propTypes = {
   row: PropTypes.shape({
     name: PropTypes.string.isRequired,
-    dueDate: PropTypes.string.isRequired,
   }).isRequired,
 };
-
-const rows = [
-  createData("Grant 1", "11/01/2020"),
-  createData("Grant 2", "11/02/2020"),
-  createData("Grant 3", "11/03/2020"),
-];
 
 function Row(props) {
   const { row } = props;
@@ -51,7 +49,7 @@ function Row(props) {
   const classes = useRowStyles();
 
   return (
-    <React.Fragment>
+    <>
       <TableRow className={classes.root}>
         <TableCell>
           <IconButton
@@ -65,6 +63,8 @@ function Row(props) {
         <TableCell component="th" scope="row">
           {row.name}
         </TableCell>
+        <TableCell align="left">{row.sponsor}</TableCell>
+        <TableCell align="left">{row.amount}</TableCell>
         <TableCell align="right">{row.dueDate}</TableCell>
       </TableRow>
       <TableRow>
@@ -74,97 +74,112 @@ function Row(props) {
               <Typography variant="h6" gutterBottom component="div">
                 Description
               </Typography>
-              <p>Random description for grant placed here</p>
+              <p>{row.description}</p>
             </Box>
           </Collapse>
         </TableCell>
       </TableRow>
-    </React.Fragment>
+    </>
   );
 }
 
-//change this to apply to grant information
-function createData(name, dueDate) {
-  return {
-    name,
-    dueDate,
-  };
-}
 
 const Resources = (props) => {
   const classes = useCardStyles();
+  const [grants, setGrants] = useState([]);
+  const contentful = require("contentful");
+
+
+  useEffect(() => {
+    const client = contentful.createClient({
+      space: "g79vk6o1szlh",
+      accessToken: "HaMELtyUJaegKAtD30E2WqMHfVjwHPFEs-npzky8mFA",
+    });
+    client.getEntries({ content_type: "grants" }).then((response) => {
+      setGrants(response.items);
+      console.log(response.items);
+    });
+  }, []);
+
+  const resourceGrants = grants.map((grant, i) => (
+    <Row key={grant.fields.name} row={grant.fields} id = {i} key = {i}/>
+  ));
 
   return (
     <>
       <Container>
         <h1>Resources</h1>
       </Container>
+
       <Container>
-        <h2>{msg.Alliances.title}</h2>
+        <h2>Our Networks</h2>
         <div className={classes.resourceCards}>
-          <CardTemplate
-            name={msg.sampleAlliance.name}
-            imgSrc={msg.imageExample.src}
-            alt={msg.imageExample.alt}
-            link={msg.sampleAlliance.link}
-          />
-          <CardTemplate
-            name={msg.sampleAlliance.name}
-            imgSrc={msg.imageExample.src}
-            alt={msg.imageExample.alt}
-            link={msg.sampleAlliance.link}
-          />
+          <Grid container spacing={1}>
+            {networks.networks.map((item) => (
+              <Grid item sm={2}>
+                <CardTemplate
+                  name={item.name}
+                  link={item.link}
+                  imgSrc={item.imgSrc}
+                  alt={item.alt}
+                />
+              </Grid>
+            ))}
+          </Grid>
         </div>
       </Container>
+
       <Container>
-        <h2>{msg.Partners.title}</h2>
+        <h2>Our Partners</h2>
         <div className={classes.resourceCards}>
-          <CardTemplate
-            name={msg.samplePartner.name}
-            imgSrc={msg.imageExample.src}
-            alt={msg.imageExample.alt}
-            link={msg.samplePartner.link}
-          />
-          <CardTemplate
-            name={msg.samplePartner.name}
-            imgSrc={msg.imageExample.src}
-            alt={msg.imageExample.alt}
-            link={msg.samplePartner.link}
-          />
+          <Grid container spacing={1}>
+            {partners.partners.map((item) => (
+              <Grid item sm={2}>
+                <CardTemplate
+                  name={item.name}
+                  link={item.link}
+                  imgSrc={item.imgSrc}
+                  alt={item.alt}
+                />
+              </Grid>
+            ))}
+          </Grid>
         </div>
       </Container>
+
       <Container>
-        <h2>{msg.Network.title}</h2>
+        <h2>Our Alliances</h2>
         <div className={classes.resourceCards}>
-          <CardTemplate
-            name={msg.sampleNetwork.name}
-            imgSrc={msg.imageExample.src}
-            alt={msg.imageExample.alt}
-            link={msg.sampleNetwork.link}
-          />
-          <CardTemplate
-            name={msg.sampleNetwork.name}
-            imgSrc={msg.imageExample.src}
-            alt={msg.imageExample.alt}
-            link={msg.sampleNetwork.link}
-          />
+          <Grid container spacing={1}>
+            {alliances.alliances.map((item) => (
+              <Grid item sm={2}>
+                <CardTemplate
+                  name={item.name}
+                  link={item.link}
+                  imgSrc={item.imgSrc}
+                  alt={item.alt}
+                />
+              </Grid>
+            ))}
+          </Grid>
         </div>
       </Container>
+
       <Container>
-        <h2>{msg.Grants.title}</h2>
+        <h2>Grants</h2>
         <TableContainer component={Paper} className="resource-table">
           <Table aria-label="collapsible table">
             <TableHead>
               <TableRow>
                 <TableCell />
                 <TableCell>Grant Name</TableCell>
+                <TableCell>Sponsor</TableCell>
+                <TableCell>Amount</TableCell>
                 <TableCell align="right">Due Date</TableCell>
               </TableRow>
             </TableHead>
             <TableBody>
-              {rows.map((row) => (
-                <Row key={row.name} row={row} />
-              ))}
+              {resourceGrants}
             </TableBody>
           </Table>
         </TableContainer>

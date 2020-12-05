@@ -1,0 +1,154 @@
+{
+  "alliances": [
+    {
+      "name": "American Association of Women Radiologists",
+      "link": "http://www.aawr.org/",
+      "imgSrc": "https://upload.wikimedia.org/wikipedia/en/9/94/American_Association_for_Women_Radiologists_%28logo%29.png",
+      "alt": "AAWR"
+    },
+    {
+      "name": "Society of Women Geographers",
+      "link": "http://www.iswg.org/",
+      "imgSrc": "http://www.iswg.org/images/SWG-logo.png",
+      "alt": "Society of Women Geographers"
+    },
+    {
+      "name": "BCS Women",
+      "link": "https://bcswomen.bcs.org/",
+      "imgSrc": "https://www.wearethecity.com/wp-content/uploads/2015/05/BCSWomen1.jpg",
+      "alt": "BCS Women"
+    },
+    {
+      "name": "Women in Technology International",
+      "link": "https://witi.com/",
+      "imgSrc": "https://witi.com/conferences/2019/summit/img/witi-logo.png",
+      "alt": "Women in Technology International"
+    },
+    {
+      "name": "Science and Engineering Alliance",
+      "link": "https://www.facebook.com/pages/category/Business-Service/Science-and-Engineering-Alliance-Inc-SEA-158369357546181/",
+      "imgSrc": "https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/167660_158376840878766_1842360_n.jpg?_nc_cat=100&ccb=2&_nc_sid=85a577&_nc_ohc=BTKeFsyfmxgAX_a0mRJ&_nc_ht=scontent-iad3-1.xx&oh=04b3a434514d62dd473943ba43ae4a30&oe=5FE102FE",
+      "alt": "Science and Engineering Alliance"
+    },
+    {
+      "name": "Women in STEM Symposium -- Workforce Alliance",
+      "link": "https://www.wpworkforce.org/women-in-stem-symposium",
+      "imgSrc": "https://static1.squarespace.com/static/5c26479dcef372078a987441/5c265fdf6d2a7347df5b9d3e/5d7140e11fdc580001b78a5b/1568156192143/calthumbWA1.jpg?format=1500w",
+      "alt": "Women in STEM Symposium -- Workforce Alliance"
+    },
+    {
+      "name": "LU-Women in Science and Engineering",
+      "link": "https://advance.cc.lehigh.edu/lu-wise-women-science-engineering",
+      "imgSrc": "",
+      "alt": "LU-Women in Science and Engineering"
+    },
+    {
+      "name": "International Day of Women and Girls in Science",
+      "link": "https://www.womeninscienceday.org/",
+      "imgSrc": "https://gendergapinscience.files.wordpress.com/2018/02/int_day_women_girls_in_science_logo_english-900x449.jpeg",
+      "alt": "International Day of Women and Girls in Science"
+    },
+    {
+      "name": "L O'Real Women in Science Program",
+      "link": "https://www.loreal.com/en/usa/articles/commitment/fwis/",
+      "imgSrc": "https://upload.wikimedia.org/wikipedia/commons/a/a3/L%27Or%C3%A9al-UNESCO_For_Women_in_Science.jpg",
+      "alt": "L O'Real Women in Science Program"
+    },
+    {
+      "name": "Women in Network Science",
+      "link": "https://www.networkscienceinstitute.org/wins",
+      "imgSrc": "https://uploads-ssl.webflow.com/5c9104426f6f88af009ef3ad/5c9104426f6f8863439ef738_Wins_tr-p-500.png",
+      "alt": "Women in Network Science"
+    },
+    {
+      "name": "Linux Chix",
+      "link": "https://www.linuxchix.org/",
+      "imgSrc": "https://www.linuxchix.org/sites/default/files/lcxlogo.png",
+      "alt": "Linux Chix"
+    },
+    {
+      "name": "Women in Science and Engineering (University of Wisconsin)",
+      "link": "https://www.housing.wisc.edu/residence-halls/learning-communities/wise/",
+      "imgSrc": "https://d9mfr5qxp4i37.cloudfront.net/wp-content/uploads/sites/132/2020/01/wise-logo-black-768x512.png",
+      "alt": "Women in Science and Engineering (University of Wisconsin)"
+    },
+    {
+      "name": "Women in Science and Engineering (Cornell University)",
+      "link": "https://www.engineering.cornell.edu/research-and-faculty/faculty/resources-faculty/women-science-and-engineering",
+      "imgSrc": "",
+      "alt": "Women in Science and Engineering (Cornell University)"
+    },
+    {
+      "name": "Women and Science and Engineering (NYU)",
+      "link": "",
+      "imgSrc": "",
+      "alt": "Women and Science and Engineering (NYU)"
+    },
+    {
+      "name": "Bryn Mawr College",
+      "link": "https://www.brynmawr.edu/",
+      "imgSrc": "https://www.brynmawr.edu/sites/all/themes/bmc/logo.png",
+      "alt": "Bryn Mawr College"
+    },
+    {
+      "name": "Initiative on Women in Science and Engineering (New York STEM Cell Foundation)",
+      "link": "https://nyscf.org/programs/community-building/women-in-science/",
+      "imgSrc": "",
+      "alt": "Initiative on Women in Science and Engineering (New York STEM Cell Foundation)"
+    },
+    {
+      "name": "Women in Engineering and Science (University of Michigan)",
+      "link": "https://www.wise.umich.edu/",
+      "imgSrc": "https://www.wise.umich.edu/content/dam/michigan-lsa/admin/logos/wise-logo.png",
+      "alt": "Women in Engineering and Science (University of Michigan)"
+    },
+    {
+      "name": "American Association of University Women",
+      "link": "https://www.aauw.org/",
+      "imgSrc": "https://www.stetson.edu/today/wp-content/uploads/2019/09/AAUW.270...jpg",
+      "alt": "American Association of University Women"
+    },
+    {
+      "name": "Association for Women in Science",
+      "link": "https://www.awis.org/",
+      "imgSrc": "https://www.awis.org/wp-content/uploads/awis-social-image-card.jpg",
+      "alt": "Association for Women in Science"
+    },
+    {
+      "name": "Women in STEM",
+      "link": "",
+      "imgSrc": "",
+      "alt": "Women in STEM"
+    },
+    {
+      "name": "European Platform for Women Scientists",
+      "link": "https://epws.org/",
+      "imgSrc": "https://epws.org/wp-content/uploads/2018/02/EPWS-LOGO-SQUARE-BIG.jpg",
+      "alt": "European Platform for Women Scientists"
+    },
+    {
+      "name": "Graduate Women in Science",
+      "link": "https://www.gwis.org/",
+      "imgSrc": "https://www.gwis.org/graphics/logo.jpg",
+      "alt": "Graduate Women in Science"
+    },
+    {
+      "name": "National Institute for Support Women in Engineering and Technology",
+      "link": "https://www.iwitts.org/",
+      "imgSrc": "http://iwitts.org/images/IWITTS-Logo.png",
+      "alt": "National Institute for Support Women in Engineering and Technology"
+    },
+    {
+      "name": "Sociologists for Women in Society",
+      "link": "https://socwomen.org/",
+      "imgSrc": "https://i2.wp.com/socwomen.org/wp-content/uploads/2017/11/SWSlogo.png?w=320&ssl=1",
+      "alt": "Sociologists for Women in Society"
+    },
+    {
+      "name": "American Medical Women's Association",
+      "link": "https://www.amwa-doc.org/",
+      "imgSrc": "https://www.amwa-doc.org/wp-content/uploads/2014/02/AMWA-Logo-F.png",
+      "alt": "American Medical Women's Association"
+    }
+  ]
+}
