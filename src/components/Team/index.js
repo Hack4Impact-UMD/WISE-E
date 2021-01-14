@@ -6,6 +6,8 @@ import Grid from "@material-ui/core/Grid";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import Carousel from "react-material-ui-carousel";
+import CardMedia from '@material-ui/core/CardMedia';
+
 
 const useStyles = makeStyles({
   title: {
@@ -25,7 +27,11 @@ const useStyles = makeStyles({
     margin: "10px",
   },
   Card: {
-    height: "150px",
+    height: "550px",
+  },
+  media: {
+    height: 0,
+    paddingTop: '100%', 
   },
 });
 
@@ -33,20 +39,27 @@ const affiliatedNames = [
   {
     name: "Dr. Camellia Okpodu",
     position: "Dean of the School of Arts and Science at Xavier University",
-  },
-  { name: "Belinda Hankins", position: "Retired, Senior Executive at AT&T" },
-  {
-    name: "Ahmed Kanisha",
+    imageUrl: "./static/Camellia.jpg"
+  },{ 
+    name: "Garry Harris", 
+    position: "Director at the Center of Sustainable Communities" ,
+    imageUrl: "./static/Garry.jpg"
+  },{ 
+    name: "Belinda Hankins", 
+    position: "Retired, Senior Executive at AT&T" ,
+    imageUrl: "./static/Belinda.jpg"
+  },{
+    name: "Kanisha Ahmed",
     position: "Earth Science Student at Georgia Institute of Technology",
-  },
-  {
+    imageUrl: "./static/Kanisha.jpg"
+  },{
     name: "Ashanti Kincannon",
-    position:
-      "Earth and Environmental Science Student at Virginia Wesleyan University",
-  },
-  {
+    position: "Earth and Environmental Science Student at Virginia Wesleyan University",
+    imageUrl: "./static/Ashanti.jpg"
+  },{
     name: "Juliet Hall",
     position: " Advisor & Leadership Consultant at Juliet Hall, Inc. ",
+    imageUrl: "./static/Juliet.jpg"
   },
 ];
 
@@ -92,7 +105,7 @@ const Team = () => {
 
       <br />
       <center>
-        <h2>Others Involved</h2>
+        <h2>Team</h2>
       </center>
       <Container>
         <Grid container spacing={3}>
@@ -100,6 +113,11 @@ const Team = () => {
             return (
               <Grid item md={4}>
                 <Card className={classes.Card}>
+                <CardMedia
+                  className={classes.media}
+                  image={require(""+item.imageUrl)}
+                  title={item.name}
+                  />
                   <CardContent className={classes.cardContent}>
                     <h3>{item.name}</h3>
                     <p>{item.position}</p>
@@ -115,3 +133,4 @@ const Team = () => {
 };
 
 export default Team;
+
