@@ -71,7 +71,7 @@ const UserForm = (props) => {
             <option aria-label="None" value="" disabled></option>
             <option value={"Become a member and be a part of our network"}>Become a member and be a part of our network</option>
             <option value={"Become a volunteer for a specific event"}>Become a volunteer for a specific event</option>
-            <option value={"Learn more about WISE-E mission"}>Learn more about WISE-E mission</option>
+            <option value={"Learn more about WISE.E mission"}>Learn more about WISE.E mission</option>
             <option value={"Other"}>Other</option>
           </Select>
         </FormControl>
