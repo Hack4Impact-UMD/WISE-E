@@ -13,7 +13,7 @@ import GetInvolved from "./components/GetInvolved";
 const App = () => {
 	return (
 		<BrowserRouter>
-			<Header title="WISE-E" />
+			<Header title="WISE.E" />
 			<Switch>
 				<Route exact path="/about" component={About} />
 				<Route exact path="/team" component={Team} />

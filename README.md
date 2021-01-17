@@ -1,4 +1,4 @@
-# WISE-E
+# WISE.E
 
 This project is a website for the Women in Science, Engineering, and the Environment initiative, a collaboration between the [Center for Sustainable Communities](http://csc-atl.org/) and the IEEE [Women in Geoscience and Remote Sensing Society](http://www.grss-ieee.org/community/idea/). 
 
@@ -8,7 +8,6 @@ The team consists of
 * Lydia Hu 
 * Daneil Nguyen
 * Jason Maa
-* Maria Mao
 * Elizabeth Chen
 * Shivanee Arun 
 * Natnael Mekonnen
@@ -22,7 +21,6 @@ Then install modules and run development server with:
 
     npm install
     npm start
-
 
 ***
 
