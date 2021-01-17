@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link as RouterLink } from 'react-router-dom';
 import { makeStyles, Toolbar, Typography, Button, Link } from '@material-ui/core';
+import logo from './logo.png';
+
 
 const sections = [
     { title: "Home", url: "/home"},
@@ -29,6 +31,10 @@ const useStyles = makeStyles((theme) => ({
         padding: theme.spacing(1.75),
         flexShrink: 1,
     },
+    logo:{
+        height: 38, 
+        width: 126
+    }
 }));
 
 const Header = props => {
@@ -37,7 +43,11 @@ const Header = props => {
     return (
         <React.Fragment>
             <Toolbar className={classes.toolbar}>
-                <Button size="small" to="/" component={RouterLink}> Logo </Button>
+                
+                <Button to="/" component={RouterLink}>
+                    <img  className={classes.logo} src={logo} ></img>
+                 </Button>
+
                 <div className={classes.toolbarLogo}></div>
                 {sections.map((section) => (
                     <Link

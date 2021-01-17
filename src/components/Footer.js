@@ -43,7 +43,7 @@ export default function Footer(props) {
               <Typography variant="subtitle1">Contact Us</Typography>
             <Grid container spacing={2}>
               <Grid item inner>
-              <Typography variant="subtitle2">admin@wise-.org</Typography>
+              <Typography variant="subtitle2">admin@wise-e.org</Typography>
               </Grid>
             </Grid>
           </Grid>
