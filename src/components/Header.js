@@ -10,9 +10,10 @@ const sections = [
     { title: "About", url: "/about" },
     { title: "Our Team", url: "/team" },
     { title: "Events", url: "/events" },
-    { title: "Contact", url: "/contact" },
+    { title: "Resources", url: "/resources" },
     { title: "Partners", url: "/partners" },
     { title: "Get Involved", url: "/get-involved" },
+    { title: "Donate", url: "/donate" }
 ];
 
 const useStyles = makeStyles((theme) => ({

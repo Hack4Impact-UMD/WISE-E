@@ -69,8 +69,8 @@ export default function Footer(props) {
                 </Link>
               </Grid>
               <Grid item xs={4}>
-                <Link className={classes.link} href="events">
-                  Events
+                <Link className={classes.link} href="resources">
+                  Resources
                 </Link>
               </Grid>
             </Grid>
@@ -102,6 +102,22 @@ export default function Footer(props) {
                 </Link>
               </Grid>
             </Grid>
+
+            {/* Row 4 */}
+            <Grid container spacing={3}>
+              <Grid item xs={4}>
+                <Link className={classes.link} href="events">
+                  Events
+                </Link>
+              </Grid>
+              <Grid item xs={4}>
+                <Link className={classes.link} href="donate" >
+                  Donate
+                </Link>
+              </Grid>
+            </Grid>
+
+
           </Grid>
         </Grid>
         <br></br>
