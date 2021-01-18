@@ -5,7 +5,12 @@ import Container from "@material-ui/core/Container";
 import Typography from "@material-ui/core/Typography";
 import Link from "@material-ui/core/Link";
 import Grid from "@material-ui/core/Grid";
-import Paper from "@material-ui/core/Paper";
+import EmailIcon from "@material-ui/icons/Email";
+import PhoneIcon from "@material-ui/icons/Phone";
+
+import IconButton from "@material-ui/core/IconButton";
+
+import FacebookIcon from "@material-ui/icons/Facebook";
 
 function Copyright() {
   return (
@@ -14,7 +19,7 @@ function Copyright() {
       <Link color="inherit" href="https://material-ui.com/">
         WISE.E
       </Link>{" "}
-      {new Date().getFullYear()} {" | "} {"Website by "} 
+      {new Date().getFullYear()} {" | "} {"Website by "}
       <Link color="inherit" href="https://umd.hack4impact.org">
         Hack4Impact
       </Link>
@@ -32,9 +37,16 @@ const useStyles = makeStyles((theme) => ({
   link: {
     color: "white",
     fontFamily: "sans-serif",
-    fontSize: 20, 
+    fontSize: 20,
     // fontWeight: "bold"
-  }
+  },
+  subtitle: {
+    color: "white",
+    fontFamily: "sans-serif",
+    fontSize: 20,
+    display: "inline-flex",
+    verticalAlign: "bottom",
+  },
 }));
 
 export default function Footer(props) {
@@ -45,14 +57,42 @@ export default function Footer(props) {
     <footer className={classes.footer}>
       <Container maxWidth="lg">
         <Grid container spacing={3}>
+          
+          {/* Contact Us */}
+          <Grid item xs>
+            <Typography variant="subtitle1">Contact Us</Typography>
+
+             {/* Row 1 */}
+             <Grid container spacing={3}>
+              <Grid item xs={9}>
+              <Typography variant="subtitle2" className={classes.subtitle}>
+                  {" "}
+                  <EmailIcon /> &nbsp; admin@wise-e.org
+                </Typography>
+              </Grid>
+            </Grid>
+
             
-            {/* Contact Us */}
-            <Grid item xs>
-              <Typography variant="subtitle1">Contact Us</Typography>
-            <Grid container spacing={2}>
-              <Grid item inner>
-              <Typography variant="subtitle2">admin@wise-e.org</Typography>
-              <Typography variant="subtitle2">404-936-0620</Typography>
+             {/* Row 2 */}
+             <Grid container spacing={3}>
+              <Grid item xs={9}>
+              <Typography variant="subtitle2" className={classes.subtitle}>
+                  {" "}
+                  <PhoneIcon /> &nbsp; 404-936-0620
+                </Typography>
+              </Grid>
+            </Grid>
+
+
+            {/* Row 3 */}
+            <Grid container spacing={3}>
+              <Grid item xs={9}>
+              <Link
+                  className={classes.subtitle}
+                  href="https://www.facebook.com/Center-for-Sustainable-Communities-Atlanta-219072231567212/"
+                >
+                  <FacebookIcon /> &nbsp; Facebook
+                </Link>
               </Grid>
             </Grid>
           </Grid>
@@ -64,7 +104,7 @@ export default function Footer(props) {
             {/* Row 1 */}
             <Grid container spacing={3}>
               <Grid item xs={4}>
-              <Link className={classes.link} href="/">
+                <Link className={classes.link} href="/">
                   Home
                 </Link>
               </Grid>
@@ -83,7 +123,7 @@ export default function Footer(props) {
                 </Link>
               </Grid>
               <Grid item xs={4}>
-                <Link className={classes.link} href="partners" >
+                <Link className={classes.link} href="partners">
                   Partners
                 </Link>
               </Grid>
@@ -97,7 +137,7 @@ export default function Footer(props) {
                 </Link>
               </Grid>
               <Grid item xs={4}>
-                <Link className={classes.link} href="get-involved" >
+                <Link className={classes.link} href="get-involved">
                   Get Involved
                 </Link>
               </Grid>
@@ -111,13 +151,11 @@ export default function Footer(props) {
                 </Link>
               </Grid>
               <Grid item xs={4}>
-                <Link className={classes.link} href="donate" >
+                <Link className={classes.link} href="donate">
                   Donate
                 </Link>
               </Grid>
             </Grid>
-
-
           </Grid>
         </Grid>
         <br></br>
