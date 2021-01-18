@@ -6,9 +6,10 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Team from "./components/Team";
 import Events from "./components/Events";
-import Contact from "./components/Contact";
+import Resources from "./components/Resources";
 import Partners from "./components/Partners";
 import GetInvolved from "./components/GetInvolved";
+import Donate from "./components/Donate";
 
 const App = () => {
 	return (
@@ -18,9 +19,10 @@ const App = () => {
 				<Route exact path="/about" component={About} />
 				<Route exact path="/team" component={Team} />
 				<Route exact path="/events" component={Events} />
-				<Route exact path="/contact" component={Contact} />
+				<Route exact path="/resources" component={Resources} />
 				<Route exact path="/partners" component={Partners} />
 				<Route exact path="/get-involved" component={GetInvolved} />
+				<Route exact path="/donate" component={Donate} />
 				<Route exact path="/" component={Home} />
 				<Redirect to="/" />
 			</Switch>

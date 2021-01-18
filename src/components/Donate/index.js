@@ -1,13 +1,13 @@
 import React from 'react';
 import { Container } from '@material-ui/core';
 
-const Contact = () => {
+const Donate = () => {
     return (
         <Container>
-            <h1>Resources</h1>
-            <p>Contact info</p>
+            <h1>Donate</h1>
+            <p>Donation page</p>
         </Container>
     );
 }
 
-export default Contact;
+export default Donate;
