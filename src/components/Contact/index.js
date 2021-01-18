@@ -4,7 +4,8 @@ import { Container } from '@material-ui/core';
 const Contact = () => {
     return (
         <Container>
-            <h1>Contact</h1>
+            <h1>Resources</h1>
+            <p>Contact info</p>
         </Container>
     );
 }

@@ -9,6 +9,7 @@ const About = () => {
       <div className={styles["banner-img"]}>
         <br></br>
         <br></br>
+        <br></br>
 
         <div className={styles["header-div-1"]}>
           <h1 className={styles["header-text"]}>Recruit. &nbsp; </h1>

@@ -7,7 +7,7 @@ import About from "./components/About";
 import Team from "./components/Team";
 import Events from "./components/Events";
 import Contact from "./components/Contact";
-import Resources from "./components/Resources";
+import Partners from "./components/Partners";
 import GetInvolved from "./components/GetInvolved";
 
 const App = () => {
@@ -19,7 +19,7 @@ const App = () => {
 				<Route exact path="/team" component={Team} />
 				<Route exact path="/events" component={Events} />
 				<Route exact path="/contact" component={Contact} />
-				<Route exact path="/resources" component={Resources} />
+				<Route exact path="/partners" component={Partners} />
 				<Route exact path="/get-involved" component={GetInvolved} />
 				<Route exact path="/" component={Home} />
 				<Redirect to="/" />

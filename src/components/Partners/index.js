@@ -84,7 +84,7 @@ function Row(props) {
 }
 
 
-const Resources = (props) => {
+const Partners = (props) => {
   const classes = useCardStyles();
   const [grants, setGrants] = useState([]);
   const contentful = require("contentful");
@@ -108,7 +108,7 @@ const Resources = (props) => {
   return (
     <>
       <Container>
-        <h1>Resources</h1>
+        <h1>Partners</h1>
       </Container>
 
       <Container>
@@ -188,4 +188,4 @@ const Resources = (props) => {
   );
 };
 
-export default Resources;
+export default Partners;

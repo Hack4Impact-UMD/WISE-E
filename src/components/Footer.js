@@ -14,8 +14,10 @@ function Copyright() {
       <Link color="inherit" href="https://material-ui.com/">
         WISE.E
       </Link>{" "}
-      {new Date().getFullYear()}
-      {"."}
+      {new Date().getFullYear()} {" | "} {"Website by "} 
+      <Link color="inherit" href="https://umd.hack4impact.org">
+        Hack4Impact
+      </Link>
     </Typography>
   );
 }
@@ -27,6 +29,12 @@ const useStyles = makeStyles((theme) => ({
     marginTop: theme.spacing(8),
     padding: theme.spacing(10, 0),
   },
+  link: {
+    color: "white",
+    fontFamily: "sans-serif",
+    fontSize: 20, 
+    // fontWeight: "bold"
+  }
 }));
 
 export default function Footer(props) {
@@ -44,6 +52,7 @@ export default function Footer(props) {
             <Grid container spacing={2}>
               <Grid item inner>
               <Typography variant="subtitle2">admin@wise-e.org</Typography>
+              <Typography variant="subtitle2">404-936-0620</Typography>
               </Grid>
             </Grid>
           </Grid>
@@ -55,32 +64,42 @@ export default function Footer(props) {
             {/* Row 1 */}
             <Grid container spacing={3}>
               <Grid item xs={4}>
-                <a href="/">Home</a>
+              <Link className={classes.link} href="/">
+                  Home
+                </Link>
               </Grid>
               <Grid item xs={4}>
-                <a href="events">Events</a>
+                <Link className={classes.link} href="events">
+                  Events
+                </Link>
               </Grid>
             </Grid>
 
             {/* Row 2 */}
             <Grid container spacing={3}>
               <Grid item xs={4}>
-                <Link href="about" color="white">
+                <Link className={classes.link} href="about">
                   About
                 </Link>
               </Grid>
               <Grid item xs={4}>
-                <a href="Resources">Resources</a>
+                <Link className={classes.link} href="partners" >
+                  Partners
+                </Link>
               </Grid>
             </Grid>
 
             {/* Row 3 */}
             <Grid container spacing={3}>
               <Grid item xs={4}>
-                <a href="team">Our Team</a>
+                <Link className={classes.link} href="team">
+                  Our Team
+                </Link>
               </Grid>
               <Grid item xs={4}>
-                <a href="get-involved">Get Involved</a>
+                <Link className={classes.link} href="get-involved" >
+                  Get Involved
+                </Link>
               </Grid>
             </Grid>
           </Grid>

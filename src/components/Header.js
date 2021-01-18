@@ -10,8 +10,8 @@ const sections = [
     { title: "About", url: "/about" },
     { title: "Our Team", url: "/team" },
     { title: "Events", url: "/events" },
-    { title: "Contact Us", url: "/contact" },
-    { title: "Resources", url: "/resources" },
+    { title: "Contact", url: "/contact" },
+    { title: "Partners", url: "/partners" },
     { title: "Get Involved", url: "/get-involved" },
 ];
 
@@ -30,6 +30,10 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: 'space-between',
         padding: theme.spacing(1.75),
         flexShrink: 1,
+        color: "#180142", 
+        fontFamily: "sans-serif",
+        fontWeight: "bold", 
+        fontSize: 18
     },
     logo:{
         height: 38, 
