@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Link } from "@material-ui/core";
+import { Container, Link, Grid, ButtonBase, Button } from "@material-ui/core";
 import Typography from "@material-ui/core/Typography";
 
 const Donate = () => {
@@ -7,20 +7,35 @@ const Donate = () => {
     <Container>
       <Typography variant="h5">Support Us</Typography>
 
-      <Typography>
-        Click the button on the right to give securely online via our Joint Plan
-        of Work partner, Virginia Organizing. We thank you, in advance, for your
-        generosity in helping us make our area a more sustainable environment in
-        which to live, work and play.
-      </Typography>
+      <Grid container spacing={3}>
+        <Grid item xs={9}>
+          <Typography>
+            Click the button on the right to give securely online via our Joint
+            Plan of Work partner, Virginia Organizing. We thank you, in advance,
+            for your generosity in helping us make our area a more sustainable
+            environment in which to live, work and play.
+          </Typography>
 
-      <Typography>
-        Note: Virginia Organizing is officially registered with the Department
-        of Agriculture and Consumer Services, P.O. Box 1163, Richmond, VA 23209.
-        You can write to this Department for all relevant financial statements
-        and procedures regarding the solicitation of contributions. Your
-        donation is tax-deductible to the extent allowed by law.
-      </Typography>
+          <Typography>
+            Note: Virginia Organizing is officially registered with the
+            Department of Agriculture and Consumer Services, P.O. Box 1163,
+            Richmond, VA 23209. You can write to this Department for all
+            relevant financial statements and procedures regarding the
+            solicitation of contributions. Your donation is tax-deductible to
+            the extent allowed by law.
+          </Typography>
+        </Grid>
+
+        <Grid item xs>
+          <Button
+            variant="outlined"
+            href="https://donatenow.networkforgood.org/1388125"
+            target="_blank"
+          >
+            Donate
+          </Button>
+        </Grid>
+      </Grid>
 
       <br></br>
       <Typography variant="h6">Tax Deduction Information</Typography>

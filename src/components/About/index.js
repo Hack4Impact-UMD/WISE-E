@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, makeStyles } from "@material-ui/core";
+import { Container, makeStyles, Typography } from "@material-ui/core";
 import styles from "./styles.module.css";
 
 const About = () => {
@@ -26,8 +26,8 @@ const About = () => {
 
       <Container>
 
-        <h1>About</h1>
-        <p>
+        <Typography variant="h5">About</Typography>
+        <Typography>
           The Women in Science, Energy, and the Environment (WISE.E) initiative
           is a program of the Center for Sustainable Communities (CSC). WISE.E
           is based in Georgia and has a national footprint of educational
@@ -36,7 +36,7 @@ const About = () => {
           grant opportunities, and events where they can meet like-minded
           professionals, WISE.E aims to support a historically under resourced
           population in these industries and encourage involvement.
-        </p>
+          </Typography>
       </Container>
     </>
   );
