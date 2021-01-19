@@ -7,9 +7,6 @@ import Link from "@material-ui/core/Link";
 import Grid from "@material-ui/core/Grid";
 import EmailIcon from "@material-ui/icons/Email";
 import PhoneIcon from "@material-ui/icons/Phone";
-
-import IconButton from "@material-ui/core/IconButton";
-
 import FacebookIcon from "@material-ui/icons/Facebook";
 
 function Copyright() {
@@ -29,7 +26,9 @@ function Copyright() {
 
 const useStyles = makeStyles((theme) => ({
   footer: {
-    backgroundColor: "#295F70",
+    // backgroundColor: "#295F70",
+    // backgroundColor: "#180142",
+    backgroundColor: "#3354BD",
     color: "white",
     marginTop: theme.spacing(8),
     padding: theme.spacing(10, 0),
