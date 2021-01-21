@@ -9,7 +9,7 @@
     {
       "name": "Women in Science Technology Networks",
       "link": "https://www.technologynetworks.com/immersive/women-in-science",
-      "imgSrc": "",
+      "imgSrc": "https://image.flaticon.com/icons/png/512/148/148800.png",
       "alt": "Women in Science Technology Networks"
     },
     {
@@ -33,7 +33,7 @@
     {
       "name": "African Association of Women in Geo Sciences",
       "link": "http://www.aawg.org/",
-      "imgSrc": "",
+      "imgSrc": "https://image.flaticon.com/icons/png/512/148/148800.png",
       "alt": "African Association of Women in Geo Sciences"
     },
     {
@@ -41,12 +41,6 @@
       "link": "https://swe.org/",
       "imgSrc": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0e/Society_of_Women_Engineers_logo.svg/1200px-Society_of_Women_Engineers_logo.svg.png",
       "alt": "Society of Women Engineers"
-    },
-    {
-      "name": "Third World Women in Science",
-      "link": "",
-      "imgSrc": "",
-      "alt": "Third World Women in Science"
     },
     {
       "name": "Association for Women in Mathematics",
@@ -59,12 +53,6 @@
       "link": "https://eswnonline.org/",
       "imgSrc": "https://earthzine.org/wp-content/uploads/2017/05/ESWN1.png",
       "alt": "Earth Science Women's Network"
-    },
-    {
-      "name": "WomenNet",
-      "link": "",
-      "imgSrc": "",
-      "alt": "WomenNet"
     },
     {
       "name": "Association for Women Geoscientists",
@@ -83,12 +71,6 @@
       "link": "https://epws.org/",
       "imgSrc": "https://epws.org/wp-content/uploads/2018/02/EPWS-LOGO-SQUARE-BIG.jpg",
       "alt": "European Platform for Women Scientists"
-    },
-    {
-      "name": "WomensHub",
-      "link": "",
-      "imgSrc": "",
-      "alt": "WomensHub"
     },
     {
       "name": "Society for Canadian Women in Science",

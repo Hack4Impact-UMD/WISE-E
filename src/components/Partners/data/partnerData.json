@@ -9,7 +9,7 @@
     {
       "name": "Royal Astrophysical Society",
       "link": "",
-      "imgSrc": "",
+      "imgSrc": "https://image.flaticon.com/icons/png/512/148/148800.png",
       "alt": "Royal Astrophysical Society"
     },
     {
@@ -51,14 +51,8 @@
     {
       "name": "Center for Women in Technology",
       "link": "",
-      "imgSrc": "",
+      "imgSrc": "https://image.flaticon.com/icons/png/512/148/148800.png",
       "alt": "Center for Women in Technology"
-    },
-    {
-      "name": "Women of Color in Science Award and Foundation",
-      "link": "",
-      "imgSrc": "",
-      "alt": "Women of Color in Science Award and Foundation"
     },
     {
       "name": "Black Girls Code",
@@ -87,7 +81,7 @@
     {
       "name": "ADA Initiative",
       "link": "https://adainitiative.org/",
-      "imgSrc": "",
+      "imgSrc": "https://image.flaticon.com/icons/png/512/148/148800.png",
       "alt": "ADA Initiative"
     },
     {
