@@ -27,7 +27,7 @@
     {
       "name": "Science and Engineering Alliance",
       "link": "https://www.facebook.com/pages/category/Business-Service/Science-and-Engineering-Alliance-Inc-SEA-158369357546181/",
-      "imgSrc": "https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/167660_158376840878766_1842360_n.jpg?_nc_cat=100&ccb=2&_nc_sid=85a577&_nc_ohc=BTKeFsyfmxgAX_a0mRJ&_nc_ht=scontent-iad3-1.xx&oh=04b3a434514d62dd473943ba43ae4a30&oe=5FE102FE",
+      "imgSrc": "https://image.flaticon.com/icons/png/512/148/148800.png",
       "alt": "Science and Engineering Alliance"
     },
     {
@@ -39,7 +39,7 @@
     {
       "name": "LU-Women in Science and Engineering",
       "link": "https://advance.cc.lehigh.edu/lu-wise-women-science-engineering",
-      "imgSrc": "",
+      "imgSrc": "https://image.flaticon.com/icons/png/512/148/148800.png",
       "alt": "LU-Women in Science and Engineering"
     },
     {
@@ -75,13 +75,13 @@
     {
       "name": "Women in Science and Engineering (Cornell University)",
       "link": "https://www.engineering.cornell.edu/research-and-faculty/faculty/resources-faculty/women-science-and-engineering",
-      "imgSrc": "",
+      "imgSrc": "https://image.flaticon.com/icons/png/512/148/148800.png",
       "alt": "Women in Science and Engineering (Cornell University)"
     },
     {
       "name": "Women and Science and Engineering (NYU)",
-      "link": "",
-      "imgSrc": "",
+      "link": "https://engineering.nyu.edu/women-engineering-science-technology-and-math",
+      "imgSrc": "https://image.flaticon.com/icons/png/512/148/148800.png",
       "alt": "Women and Science and Engineering (NYU)"
     },
     {
@@ -93,7 +93,7 @@
     {
       "name": "Initiative on Women in Science and Engineering (New York STEM Cell Foundation)",
       "link": "https://nyscf.org/programs/community-building/women-in-science/",
-      "imgSrc": "",
+      "imgSrc": "https://image.flaticon.com/icons/png/512/148/148800.png",
       "alt": "Initiative on Women in Science and Engineering (New York STEM Cell Foundation)"
     },
     {
@@ -113,12 +113,6 @@
       "link": "https://www.awis.org/",
       "imgSrc": "https://www.awis.org/wp-content/uploads/awis-social-image-card.jpg",
       "alt": "Association for Women in Science"
-    },
-    {
-      "name": "Women in STEM",
-      "link": "",
-      "imgSrc": "",
-      "alt": "Women in STEM"
     },
     {
       "name": "European Platform for Women Scientists",
