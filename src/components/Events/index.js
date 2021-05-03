@@ -5,7 +5,7 @@ import Pagination from './Pagination';
 import DetailDialog from './DetailDialog';
 import { dummyEvents } from './dummyData';
 
-const rowsPerPage = 2;
+const rowsPerPage = 5;
 
 /**
  * Events page

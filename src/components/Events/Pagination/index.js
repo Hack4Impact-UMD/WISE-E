@@ -34,6 +34,7 @@ export default function Pagination({ eventsCount, sortingOption, setSortingOptio
           rowsPerPageOptions={[rowsPerPage]}
         />
       </Grid>
+        {/* <div>&nbsp;</div> */}
     </Grid>
   );
 }
